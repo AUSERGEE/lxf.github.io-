@@ -272,7 +272,7 @@ p{margin-bottom: 0px;}
 /**ifcUi-进度条按钮样式***end**/
 /* 底部选项卡样式*/
 .lbm-bar-tab{ height:50px;}
-.lbm-bar-tab::before{ position: absolute;right: 0;top: 0;left: 0px;height: 1px;content: '';-webkit-transform: scaleY(.2) rotateX(180deg);background-color: #D8D8D8!important;}
+.lbm-bar-tab::before{ position: absolute;right: 0;top: 0;left: 0px;height: 1px;content: '';-webkit-transform: scaleY(.3);background-color: #D8D8D8!important;}
 .lbm-bar-tab a{color:#515252;}
 .lbm-tab-item{width:25%; height:46px; padding-top:8px; display: inline-block; text-align: center;}
 .mui-bar-tab>.lbm-active{color:#20B0FA;}
