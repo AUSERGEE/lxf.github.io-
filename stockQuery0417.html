@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link href="js/Swiper3/css/swiper.css" rel="stylesheet"/>
+    
+    
+</head>
+<body>
+	
+<div class="lbm-stockTopBar ">
+	 <header class="mui-bar  lbm-bar-nav">
+	        <div class="lbm-headerBack"><span class="lbm-icon-leftArrow"></span></div>
+			<h1 class="mui-title">库存管理</h1>
+			<div class="header-rBtn">
+		    	<span class="lbm-icon-menu" id="popMenu">
+		    	</span>
+		    </div>
+     </header>
+	 <div class="lbm-searchBar lbm_flexbox">
+			<div class="inputBtnBox">
+			   <i class="lbm-icon-scode"></i>
+			   <p>扫一扫</p>
+			</div>
+			<div class="lbm_flex1">
+				<form class="lbm-InputBox mui-input-row ">
+					<input type="search"  placeholder="商品编码" class="mui-input-clear"/>
+				</form>
+			</div>
+			<div class="inputBtnBox inputBtnBox-filter">
+			   <i class="lbm-icon-filter"></i>
+			</div>
+	 </div>
+</div>
+
+<div class="lbm-stockBottomBar " >
+	<div class="lbm_flexbox stockBottomOperation" id="deliveryBtnBar">
+	   <div class=""><div class="mui-checkbox cartListCheckbox" id="checkAll"><input name="checkbox" value="Item 2" type="checkbox" ></div></div>
+	     <p class="lbmSelectLabel lbmSelectLabel-left">仓库</p>
+		 <div class="lbm_flex1">
+			<div class="lbm-selectBox">
+				<div id='depotPicker' class="lbm-muiSelect" >深圳贸易库</div>
+				
+				<p class="lbm-muiSelectMark">已选<span class="lbm_clb" id="checkSum">0</span>件商品</p>
+			</div>
+		</div>
+		<div class="selectBtnBox">
+		   <a class="lbm-radiusBtn">出库</a>
+		</div>
+	</div>
+	<nav class=" mui-bar-tab lbm-bar-tab">
+	    <a href="index.html" class="lbm-tab-item">
+	        <span class="lbm-barIc lbm-goodsIc"></span>
+	        <span class="lbm-tab-label">商品</span>
+	    </a>
+	    <a href="customerorders.html" class="lbm-tab-item">
+	        <span class="lbm-barIc lbm-orderIc"></span><span class="lbm-tab-label">订单</span>
+	    </a>
+	    <a href="customerorders.html" class="lbm-tab-item lbm-active">
+	        <span class="lbm-barIc lbm-stockIc"></span><span class="lbm-tab-label">库存</span>
+	    </a>
+	    <a href="aboutmyself.html" class="lbm-tab-item">
+	        <span class="lbm-barIc lbm-userIc"></span><span class="lbm-tab-label">我的</span>
+	    </a>
+	</nav>
+</div>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper pt130 pbStock">
+	<div class="mui-content">
+	           <div class="stockQuery-list">
+					 	<div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="gd-label-row spotInterval">
+				                	        <span>红色</span><span>XL</span>
+				                	     </p>
+				                	     <p class="goodsItemRow">
+				                	        <span>商品：85807506</span>
+				                	     </p>
+				                	     <p class="gd-label-absRight"><span>120</span><i>台</i></p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="gd-label-row spotInterval">
+				                	        <span>红色</span><span>XL</span>
+				                	     </p>
+				                	     <p class="goodsItemRow">
+				                	        <span>商品：85807506</span>
+				                	     </p>
+				                	     <p class="gd-label-absRight"><span>120</span><i>台</i></p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="goodsItemRow">
+				                	     	<span>商品编码：10460514</span>
+				                	        <span>库存：100</span>
+				                	     </p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="goodsItemRow">
+				                	     	<span>商品编码：10460514</span>
+				                	        <span>库存：100</span>
+				                	     </p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="goodsItemRow">
+				                	     	<span>商品编码：10460514</span>
+				                	        <span>库存：100</span>
+				                	     </p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="goodsItemRow">
+				                	     	<span>商品编码：10460514</span>
+				                	        <span>库存：100</span>
+				                	     </p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+					    <div class="stockQueryListItems">
+					 		<div class="lbm_flexbox">
+				                	<span class="lbmCheck"><div class="mui-checkbox stockItemCheckbox"><input name="checkbox" value="Item 2" type="checkbox" ></div></span>
+				                	<span class="stockQuerylist-img">
+				                		<img src="images/goodsImg.jpg" />
+				                	</span>
+				                	<div class="info-box lbm_flex1">
+				                	    <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+				                	    <p class="goodsItemRow">
+				                	     	<span>商品编码：10460514</span>
+				                	        <span>库存：100</span>
+				                	     </p>
+				                	</div>
+				                	
+				            </div>
+					    </div>
+				 </div>
+	           
+	</div>
+</div>
+<div class="popMenu">
+	  <div class="popMenuBody">
+	  	  <ul class="cornerMenu">
+	  	  	   <li><i class="lbm-icon-outk"></i>出库操作</li>
+	  	  	   <li class="li-disable"><i class="lbm-icon-ink"></i>入库操作</li>
+	  	  	   <li><i class="lbm-icon-record"></i>出入库记录</li>
+	  	  </ul>
+	  </div>
+	  <div class="popMenuBg"></div>
+	  <span class="popMenuArrow"><i class="lbm-icon-topTriangle lbm-hide"></i></span>
+</div>
+
+<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+	
+	<ul class="mui-table-view lbm-popoverUl">
+		<li class="mui-table-view-cell">
+			<a href="#">删除</a>
+		</li>
+	</ul>
+	<ul class="mui-table-view lbm-popoverUl">
+		<li class="mui-table-view-cell">
+			<a href="#picture"><b>取消</b></a>
+		</li>
+	</ul>
+</div>	
+ <div class="rightDrawer" style="text-align: center;">
+     	   <div class="filterScrollWarp" id="filterScrollWarp">
+               <div class="mui-scroll">
+               	       <div class="filterList">
+		                    <div class="filterItem">
+		                        <h4><span>类型</span></h4>
+		                        <ul class="filterLabelList">
+		                            <li><span class="filterLabel active">出库</span></li>
+		                            <li><span class="filterLabel">入库</span></li>
+		                            <li><span class="filterLabel">出库</span></li>
+		                            <li><span class="filterLabel">入库</span></li>
+		                             <li><span class="filterLabel">出库</span></li>
+		                            <li><span class="filterLabel">入库</span></li>
+		                        </ul>
+		                    </div>
+		                </div>
+               	
+               </div>
+          </div>
+          <div class="closeArea"><i class="lbm-icon-close"></i></div>
+ </div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+</script>
+<script>
+ //全选
+  $('#checkAll>input').click(function(){
+  	  $(".stockItemCheckbox>input").prop('checked', $(this).prop('checked'));
+  });
+  
+ 
+</script>
+
+
+
+<link href="css/mui.picker.css" rel="stylesheet" />
+<link href="css/mui.poppicker.css" rel="stylesheet" />
+<script src="js/mui.picker.min.js"></script>
+<script src="js/mui.poppicker.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.drawer.js" ></script>
+<script>  //仓库选择控件
+	
+		mui.init();
+		mui.ready(function() {
+			//普通示例
+			var depotPicker = new mui.PopPicker();
+			depotPicker.setData([{
+				value: 'ywj',
+				text: 'LC01上海浦东贸易库'
+			}, {
+				value: 'zhy',
+				text: '上海浦东贸易库'
+			}]);
+			var showUserPickerButton = document.getElementById('depotPicker');
+			var userResult = document.getElementById('userResult');
+			showUserPickerButton.addEventListener('tap', function(event) {
+				depotPicker.show(function(items) {
+					depotPicker.innerText = JSON.stringify(items[0]);
+					//alert(JSON.stringify(items[0].text));
+					$('#depotPicker').text(items[0].text);
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+			
+		});
+</script>
+
+<script>  //右侧弹出菜单
+$('#popMenu').on('tap',function(e){
+	  $('.popMenu').hasClass("show")?$('.popMenu').removeClass("show"):$('.popMenu').addClass('show');
+      e.stopPropagation();
+})
+$('.popMenu').on('tap',function(e){
+	e.stopPropagation();
+})
+$(document).on('tap',function(){
+	 $('.popMenu').hasClass("show")?$('.popMenu').removeClass("show"):null;
+})
+</script>
+<script>
+  //下拉-底部选项卡隐藏
+  $('#offCanvasContentScroll').on('swipeup',function(){
+  	 lbmTool.spriteMove('.lbm-stockBottomBar ',[0,54,0]);
+  });
+  //上拉-底部选项卡显示
+  $('#offCanvasContentScroll').on('swipedown',function(){
+  	 lbmTool.spriteMove('.lbm-stockBottomBar ',[0,0,0]);
+  });
+  
+  //出入库记录右侧查询筛选抽屉
+   var filterDrawer=$('.rightDrawer').eq(0).appendTo('body').drawer({
+ 	   	 	direction:'right',
+ 	  	 	width:'80%',
+ 	  	 	height:'100%',
+ 	  	 	openBtn:'inputBtnBox-filter',
+ 	  	 	closeBtn:'lbm-icon-close',
+ 	  	 	eventType:'tap',
+ 	  	 	cb:function(){
+ 	  	 		$('.filterLabel').on('tap',function(){
+ 	  	 			filterDrawer.close();
+ 	  	 		})
+ 	  	 		
+ 	  	 	}
+   });
+  $('[type="checkbox"]').click(function(){
+  	  $('#checkSum').text($('.stockQuery-list input:checkbox:checked').length);
+  });
+  
+</script>
+</body>
+</html>
