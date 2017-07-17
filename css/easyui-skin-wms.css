@@ -2,8 +2,8 @@
 
 /*头部*/
 #header {
- background: #468BD8!important;
- border-color: #468bd8!important;
+ background: #0273BB!important;
+ border-color: #0273BB!important;
 }
 /*选项卡标签样式*/
 .tabs li.tabs-selected a.tabs-inner {
@@ -43,6 +43,7 @@ border-color: #E2E2E2;
 .accordion .accordion-header {
 	background: #EFEFEF;
 	filter: none;
+	border:none;
 	border-top: 1px solid #E5E5E5;
 }
 .accordion .accordion-header-selected {
@@ -61,4 +62,21 @@ background: #EFEFEF none repeat scroll 0 0;
 height: 20px;
 line-height: 20px;
 cursor: pointer;
+}
+
+/*******/
+.tabs-header, .tabs-tool {
+   background-color: #e2e2e2;
+}
+
+
+.panel-header {
+background-color: #E0ECFF;
+background: -webkit-linear-gradient(top,#E2E2E2 0,#E2E2E2 100%);
+background: -moz-linear-gradient(top,#E2E2E2 0,#E2E2E2 100%);
+background: -o-linear-gradient(top,#E2E2E2 0,#E2E2E2 100%);
+background: linear-gradient(to bottom,#E2E2E2 0,#E2E2E2 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E2E2E2,endColorstr=#E2E2E2,GradientType=0);
+border-color: #E2E2E2;
 }
