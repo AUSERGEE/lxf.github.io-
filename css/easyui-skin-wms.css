@@ -2,8 +2,8 @@
 
 /*头部*/
 #header {
- background: #0273BB!important;
- border-color: #0273BB!important;
+ background: #009EEF!important;
+ border-color: #009EEF!important;
 }
 /*选项卡标签样式*/
 .tabs li.tabs-selected a.tabs-inner {
@@ -145,12 +145,24 @@ background-color: #fff;
 background-color: #E8E8E8;
 }
 
+/*************datagrid********************************************************************************************/
+/*********table th******/
+.datagrid-header, .datagrid-td-rownumber {
+background-color: #efefef;
+background: -webkit-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+background: -moz-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+background: -o-linear-gradient(top,#F4F4F4 0,#F4F4F4 100%);
+background: linear-gradient(to bottom,#F4F4F4 0,#F4F4F4 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#F4F4F4,GradientType=0);
+}
 /*********************************************************************************************************/
-
-
-/*********************************************************************************************************/
-
-
+.calendar-header {
+background: #E2E2E2;
+}
+.calendar {
+border-color: #E2E2E2;
+}
 /*********************************************************************************************************/
 
 
