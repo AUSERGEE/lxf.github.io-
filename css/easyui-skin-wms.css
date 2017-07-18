@@ -93,3 +93,66 @@ border-right: 5px solid #FFFFFF;
 border-color: #E2E2E2;
 border-bottom: 1px solid #FFFFFF;
 }
+
+/*********************************************************************************************************/
+.l-btn {
+background: #fafafa;
+background: -webkit-linear-gradient(top,#eeeeee 0,#eeeeee 100%);
+background: -moz-linear-gradient(top,#eeeeee 0,#eeeeee 100%);
+background: -o-linear-gradient(top,#eeeeee 0,#eeeeee 100%);
+background: linear-gradient(to bottom,#eeeeee 0,#eeeeee 100%);
+-moz-border-radius: 3px;
+-webkit-border-radius:3px;
+border-radius: 3px;
+}
+.l-btn-text {
+line-height: 19px;
+}
+/*******按钮悬停颜色********/
+.l-btn:hover {
+background: #F6F9FF;
+border: 1px solid #5A98FF;
+}
+/******弹出窗*******************************************************************************/
+.window {
+background-color: #EFEFEF;
+background: -webkit-linear-gradient(top,#EFEFEF 0,#EFEFEF 20%);
+background: -moz-linear-gradient(top,#EFEFEF 0,#EFEFEF 20%);
+background: -o-linear-gradient(top,#EFEFEF 0,#EFEFEF 20%);
+background: linear-gradient(to bottom,#EFEFEF 0,#EFEFEF 20%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EFEFEF,endColorstr=#EFEFEF,GradientType=0);
+}
+.window, .window .window-body {
+border-color: #E2E2E2;
+}
+/*********输入框，下拉框**************************************************************************/
+input, textarea, select {
+border-radius: 2px;
+border: 1px solid #e0e3e9;
+}
+.textbox {
+border: 1px solid #DBDBDB;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+}
+.combo {
+border-color: #DBDBDB;
+background-color: #fff;
+}
+.combo-arrow {
+background-color: #E8E8E8;
+}
+
+/*********************************************************************************************************/
+
+
+/*********************************************************************************************************/
+
+
+/*********************************************************************************************************/
+
+
+/*********************************************************************************************************/
+
