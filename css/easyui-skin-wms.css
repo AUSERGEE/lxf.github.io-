@@ -63,7 +63,9 @@ height: 20px;
 line-height: 20px;
 cursor: pointer;
 }
-
+.layout-expand {
+background-color: #E2E2E2;
+}
 /*******/
 .tabs-header, .tabs-tool {
    background-color: #e2e2e2;
