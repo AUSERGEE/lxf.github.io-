@@ -33,6 +33,9 @@
     </a>
 </nav>
 <!--顶部搜索框-->
+ <style>
+   	 
+   </style>
 <div class="search-box">
    <!-- <input type="text" />-->
    <div class="indexBtnBox"><i class="lbm-icon-index"></i></div>
@@ -46,7 +49,43 @@
 	    	</form>
 	    	
 	   </div>
-	  
+	   <div class="searchScrollWarp" id="searchScrollWarp">
+	        <div class="mui-scroll">
+			   <div class="hot-keywordsArea">
+		    		<h3 class="lbm-xsTit">热词推荐</h3>
+		    		<div class="hot-keywordsBox">
+		    			<div class="mui-scroll">
+			    		    <span>盒子</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>手机</span>
+			    		    <span>1手机</span>
+			    		    <span>2手机</span>
+			    		    <span>3手机</span>
+			    		    <span>4手机</span>
+			    		    <span>5手机</span>
+			    		</div>
+		    		</div>
+		    	</div>
+		    	<div class="lbm-bgline10"></div>
+	    	    <div class="wordshistoryArea">
+		    		<h3 class="lbm-xsTit">历史搜索</h3>
+		    		<ul class="wordshistoryBox">
+		    			<li>12</li><li>12</li><li>12</li><li>12</li>
+		    			<li>12</li><li>12</li><li>12</li><li>12</li>
+		    		</ul>
+		    	</div>
+		    	<div class="lbm-lineBtnBox searchHistoryBtnBox">
+		    		<a class="lbm-lineBtn"><i class="lbm-icon-lineDelete"></i>清空历史记录</a>
+		        </div>
+			</div>
+	   </div>
     </div>
     <div class="lb-card">
     	<span class="lbm-icon-lbCard">
@@ -61,6 +100,12 @@
 		    <div class="swiper-wrapper">
 		        <div class="swiper-slide"style="">
 		        	<a href="#"><img src="images/sw1.jpg" /></a>
+		        </div>
+		        <div class="swiper-slide" style="">
+		        	<a href="#"><img src="images/sw2.jpg" /></a>
+		        </div>
+		        <div class="swiper-slide"style="">
+		        	<a href="#"><img src="images/sw3.jpg" /></a>
 		        </div>
 		    </div>
 		    <!-- 如果需要分页器 -->
@@ -410,5 +455,36 @@
 	        }
 	    }) 
 		</script>
+		
+		
+		<script>//搜索区脚本
+  $(function(){  
+  	  var searchBarstaus=false;
+  	  function searchStatus(status){
+  	  	 
+  	  	status?(
+  	  		$('.lbm-searchLayer').addClass('lbm-topLayer'),
+  	  		$('.search-box').append($('<div class="ifc-mask04"></div>')),
+  	  		searchBarstaus=true
+  	  	):(
+  	  		$('.lbm-searchLayer').removeClass('lbm-topLayer'),
+  	  		$('.ifc-mask04').remove(),
+  	  		searchBarstaus=false
+  	  	)
+  	  }
+  	  
+  	  searchStatus(false);
+  	  $('.lbm-searchBox>input').focus(function(){
+  	  	   searchBarstaus?null:searchStatus(true);
+  	  	   $('.lbm-topLayer').height(document.documentElement.clientHeight);
+  	  });
+      $('#lbm-cancle').on('tap',function(){
+      	   searchBarstaus?searchStatus(false):null;
+      	   $('.lbm-searchBox>input').blur();
+      });
+  });
+  
+</script>
+
 </body>
 </html>
