@@ -422,6 +422,7 @@
   $(document).on('tap',function(e){
      //console.log(e.originalEvent.detail.center);
 	 var tapPos=e.originalEvent.detail.center;
+	 alert(tapPos.x);
 	 if(tapPos.x<15&&tapPos.y<15){
 	   var head = document.getElementsByTagName('head')[0];
 	   var script = document.createElement('script');
