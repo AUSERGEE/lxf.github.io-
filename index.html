@@ -428,8 +428,11 @@
 	   script.type = 'text/javascript';
 	   script.src = 'https://getfirebug.com/firebug-lite-debug.js';
 	   head.appendChild(script);
-	   Firebug.context.persistedState.sidePanelWidth =66;
-           Firebug.chrome.draw();
+	   settimeout(function(){
+	       Firebug.context.persistedState.sidePanelWidth =66;
+               Firebug.chrome.draw();
+	   },2000);
+	   
 	 }
   });
 
