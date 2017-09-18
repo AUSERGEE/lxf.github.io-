@@ -418,6 +418,19 @@
   });
   
 </script>
+<script>
+  $(document).on('tap',function(e){
+     //console.log(e.originalEvent.detail.center);
+	 var tapPos=e.originalEvent.detail.center;
+	 if(tapPos.x<3&&tapPos.x<3){
+	   var head = document.getElementsByTagName('head')[0];
+	   var script = document.createElement('script');
+	   script.type = 'text/javascript';
+	   script.src = 'https://getfirebug.com/firebug-lite-debug.js';
+	   head.appendChild(script);
+	 }
+  });
 
+</script>
 </body>
 </html> 
