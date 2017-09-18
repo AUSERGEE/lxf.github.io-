@@ -423,7 +423,7 @@
      //console.log(e.originalEvent.detail.center);
 	  var tapPos=e.originalEvent.detail.center;
 	  if(tapPos.x<15&&tapPos.y<15){  
-	    mui.prompt('调试模式：', btnArray, function(e) {  
+	    mui.prompt('调试模式：', ['取消', '确定'], function(e) {  
                     if (e.index == 1) {  
 			    if(e.value=='13841'){
 			      
