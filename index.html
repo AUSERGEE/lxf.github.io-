@@ -425,7 +425,6 @@
 	  if(tapPos.x<15&&tapPos.y<15){  
 	    mui.prompt('调试模式：', btnArray, function(e) {  
                     if (e.index == 1) {  
-                        alert(e.value);
 			    if(e.value=='13841'){
 			      
 				   var head = document.getElementsByTagName('head')[0];
@@ -440,7 +439,7 @@
 			   
                            } else {  }  
 		    }
-           })  
+           });  
 	 }
   });
 
