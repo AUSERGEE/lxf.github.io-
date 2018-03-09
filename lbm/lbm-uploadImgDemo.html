@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    
+    
+    <style>
+body {
+	margin: 0;
+	text-align: center;
+}
+#clipArea {
+	height: 300px;
+}
+
+#view {
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	background-color: #666;
+}
+</style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+	        <div class="lbm-headerBack"><span class="lbm-icon-leftArrow"></span></div>
+			<h1 class="mui-title">标题标题</h1>
+			
+</header>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-content">
+		     <div class="lbm-btnBox">
+			       <a href="javascript:;" class="lbm-btn lbm-btn_blue">选择图片</a>
+			 </div>
+			 
+			
+			<div class="fileBtn"><input type="file" id="file">选择图片</div>
+			
+			<div id="view"></div>
+			
+			
+	</div>
+</div>
+	
+	<style>
+		
+	</style>
+
+</div>
+<div class="photoClipLayer">
+     <div class="mask"></div>
+     <div class="clicpBody">
+     	   <div id="clipArea"></div>
+     	   <div class="clipBtnBox">
+     	   	     <span id="clip-cancel"><i class="lbm-icon-clipCancel"></i></span>
+     	   	     <span id="clip-roleft"><i class="lbm-icon-clipRoLeft"></i></span>
+     	   	     <span id="clip-roright"><i class="lbm-icon-clipRoRight"></i></span>
+     	   	     <span id="clip-confirm"><i class="lbm-icon-clipOk"></i></span>
+     	   </div>
+     </div>
+<div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+<script type="text/javascript" src="js/photoClicp/iscroll-zoom.js"></script>
+<script type="text/javascript" src="js/photoClicp/hammer.min.js"></script>
+<script type="text/javascript" src="js/photoClicp/lrz.all.bundle.js"></script>
+<script type="text/javascript" src="js/photoClicp/PhotoClip.js"></script>
+
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+</script>
+<script>
+
+	var pc = new PhotoClip('#clipArea', {
+		size: [260,300],
+		outputSize: [260,300],
+		//adaptive: ['60%', '80%'],
+		file: '#file',
+		view: '#view',
+		ok: '#clip-confirm',
+		//img: 'img/mm.jpg',
+		loadStart: function() {
+			console.log('开始读取照片');
+		},
+		loadComplete: function() {
+			console.log('照片读取完成');
+			this.rotate(90);
+			$('.photoClipLayer').show();
+		},
+		done: function(dataURL) {
+			console.log(dataURL);
+			$('.photoClipLayer').hide();
+			
+		},
+		fail: function(msg) {
+			alert(msg);
+		}
+	});
+
+	// 加载的图片必须要与本程序同源，否则无法截图
+	//pc.load('img/mm.jpg');
+  $('#clip-cancel').on('click',function(){  //取消上传
+  	   $('.photoClipLayer').hide();
+  })
+  var angelNum=0;
+  $('#clip-roleft').on('click',function(){  //向左旋转图片
+  	  angelNum++;
+  	   pc.rotate(90*angelNum);
+  })
+   $('#clip-roright').on('click',function(){  //向右旋转图片
+  	  angelNum--;
+  	   pc.rotate(90*angelNum);
+  })
+</script>
+</body>
+</html>

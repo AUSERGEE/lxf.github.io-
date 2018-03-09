@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<body>
+
+<style>
+  
+  
+</style>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper mui-content-w paddingTop-0">
+	<div class="mui-content mui-content-w">
+		    <div class="btn-groud">
+		    	<p>lbmTool.alert('正在安排配送人员')</p>
+		    	<a href="javascript:;" id="alert" class="lbm-btn lbm-btn_blue">lbmTool.alert</a>
+		    </div>
+		    <div class="btn-groud">
+		    	<p>lbmTool.confirm('文本内容',function(){ //确定的回调 })</p>
+		    	<a href="javascript:;" id="confirm" class="lbm-btn lbm-btn_blue">lbmTool.confirm</a>
+		    </div>
+	
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+
+
+<script type="text/ecmascript">
+     
+     $('#alert').click(function(){
+     	 lbmTool.alert('正在安排配送人员')
+     });
+     $('#confirm').click(function(){
+     	 lbmTool.confirm('你确定要解除微信帐号绑定吗？',function(){
+     	 	 alert('确定按钮回调函数触发')
+     	 })
+     });
+     
+
+</script>
+
+
+</body>
+</html>

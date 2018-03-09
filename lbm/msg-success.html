@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<body>
+
+
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper mui-content-w paddingTop-0">
+	<div class="mui-content mui-content-w">
+		    <div class="lbm-msg">
+		    	<i class="lbm-msg-icon">
+		    		<div class="svg-animate4">
+					<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="90px" height="90px"
+			 viewBox="0 0 78 78" style="enable-background:new 0 0 78 78;" xml:space="preserve">
+				       <linearGradient id="gr-simple" x1="0" y1="0" x2="100%" y2="100%"> <stop offset="0%" stop-color="#20B0FA"/> <stop offset="100%" stop-color="#5FC4F9"/></linearGradient>
+				       <ellipse fill="none" stroke-linejoin="round" stroke="url(#gr-simple)"  transform="matrix(8.853979e-002 -0.9961 0.9961 8.853979e-002 -3.3528 75.586)" class="st0 circleRotate" cx="39.6" cy="39.6" rx="33.4" ry="33.4"/>
+				       <polyline class="st1" fill="none" stroke="url(#gr-simple)" stroke-linejoin="round" stroke-linecap="round" points="18,39.6 33.3,54.7 62,27.4 "/>
+				    </svg>
+				</div>
+		    	</i>
+		    	<p class="lbm-msgTit">操作成功</p>
+		        <p class="lbm-msgTxt">可能是由于什么原因，操作成功</p>
+		    </div>
+		    <div class="btn-groud">
+		    	<a href="javascript:;" id="submit" class="lbm-btn lbm-btn_blue">确认</a>
+		    	<a href="javascript:;" id="submit" class="lbm-btn lbm-btn_white">返回</a>
+		    </div>
+	
+   </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+
+
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+</script>
+
+
+</body>
+</html>

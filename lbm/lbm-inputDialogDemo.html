@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<body>
+
+<style>
+  
+  
+</style>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper mui-content-w paddingTop-0">
+	<div class="mui-content mui-content-w">
+		    <div class="btn-groud">
+		    	<p>lbmTool.inputDialog</p>
+		    	<a href="javascript:;" id="inputDialog" class="lbm-btn lbm-btn_blue">inputDialog</a>
+		    </div>
+		    
+		    <div class="btn-groud">
+		    	<p>lbmTool.inputDialog</p>
+		    	<a href="javascript:;" id="textareaDialog" class="lbm-btn lbm-btn_blue">文本框</a>
+		    </div>
+<pre>
+lbmTool.inputDialog(初始值,'text','标题标题',function(errorTip){
+  
+     //return false; //则弹框不会关闭
+     //return true;  //弹框关闭
+	 //errorTip('请填写正确的邮箱地址'); //用户填写内容的错误提示
+	   	  	  
+});
+// 参数:
+// 1.初始值：input的初始值设置
+// 2.输入框类型：input的type属性设置（text，number..等，也可以直接'textarea'）
+// 3.标题:弹出框的标题
+// 4.点击确定按钮后的回调函数{
+	           一，参数errorTip为输入错误的提示方法；
+	           二，参数inputVal为按下‘确定’按钮时，input框的值
+	           三，return false; //则弹框不会关闭
+	           四，return true;  //弹框关闭
+     }	
+</pre>
+	
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+
+
+<script type="text/ecmascript">
+     
+   $('#inputDialog').on('tap',function(){
+      var initVal=$(this).text();
+
+   	  lbmTool.inputDialog(initVal,'text','标题标题',function(inputVal,errorTip){
+   	  	  alert(inputVal);
+   	  	  
+   	  	 // errorTip('请填写正确的邮箱地址');
+   	  	  
+   	  });
+   })
+   $('#textareaDialog').on('tap',function(){
+      var initVal=$(this).text();
+
+   	  lbmTool.inputDialog(initVal,'textarea','标题标题',function(inputVal,errorTip){
+   	  	  alert(inputVal);
+   	  	  
+   	  	 // errorTip('请填写正确的邮箱地址');
+   	  	  
+   	  });
+   })
+// 参数:
+// 1.初始值
+// 2.输入类型
+// 3.标题
+// 4.点击确定按钮后的回调函数
+</script>
+     
+
+</script>
+
+
+</body>
+</html>

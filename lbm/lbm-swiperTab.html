@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/Swiper3/swiper.jquery.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="js/Swiper3/css/swiper.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<body>
+
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+			<h1 class="mui-title">注册认证</h1>
+</header>
+
+<!--列表切换选项卡-->
+    <div class="maple-tab clearFix">
+        <ul>
+            <li class="active"><p class="m-border-right"><i class="lbm-icon-dtl"></i>订单状态</p></li>
+            <li><p><i class="lbm-icon-parameter"></i>订单详情</p></li>
+        </ul>
+    </div>
+
+    <!--列表内容-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tab-content-1">列表1内容</div>
+            <div class="swiper-slide tab-content-2">列表2内容</div>
+        </div>
+    </div>
+    
+
+
+<style>
+/*列表切换*/
+.maple-tab {
+    background-color: #fff;
+    width: 100%;
+}
+.maple-tab ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.maple-tab ul li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #333;
+    font-size: 1.6rem;
+    padding:.9rem 0;
+    border-bottom: 2px solid #dedede;
+    cursor: pointer;
+}
+.maple-tab ul li>p>i{
+	margin-right:4px;
+	font-size: 16px;
+}
+.m-border-right {
+    border-right: 1px solid #dedede;
+}
+
+/*tab活动状态样式*/
+.maple-tab .active {
+    color: #428BCA;
+    border-bottom: 2px solid #428BCA;
+}
+.maple-tab .active p{color:#428BCA;}
+
+.tab-content-1,.tab-content-2{
+    width: 100%;
+    padding: 4% 0;
+    text-align: center;
+    font-size: 2rem;
+    background: #FFFFFF;
+}
+
+.tab-content-1{
+    color: #f76755;
+}
+.tab-content-2{
+    color: mediumslateblue;
+}
+</style>
+<script>
+$(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            onSlideChangeEnd: function (swiper) {
+                var j=mySwiper.activeIndex;
+                $('.maple-tab li, .maple-tab2 li').removeClass('active').eq(j).addClass('active');
+            }
+        })
+        /*列表切换*/
+        $('.maple-tab li, .maple-tab2 li').on('click', function (e) {
+            e.preventDefault();
+            //得到当前索引
+            var i=$(this).index();
+            $('.maple-tab li, .maple-tab2 li').removeClass('active').eq(i).addClass('active');
+            mySwiper.slideTo(i,1000,false);
+        });
+    });
+</script>
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    
+    
+    
+</head>
+<body>
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+	        <div class="lbm-headerBack"><span class="lbm-icon-leftArrow"></span></div>
+			<h1 class="mui-title">标题标题</h1>
+			
+</header>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-content">
+		<div class="lbm-btnBox">
+		    <a href="javascript:void(0);" class="lbm-btn lbm-btn_blue openTopBtn">顶部抽屉</a>
+		</div>
+		<div class="lbm-btnBox">
+		    <a href="javascript:void(0);" class="lbm-btn lbm-btn_blue openBottomBtn">底部部抽屉</a>
+		</div>
+		<div class="lbm-btnBox">
+		    <a href="javascript:void(0);" class="lbm-btn lbm-btn_blue openLeftBtn">左侧抽屉</a>
+		</div>
+		<div class="lbm-btnBox">
+		    <a href="javascript:void(0);" class="lbm-btn lbm-btn_blue openRightBtn">右侧抽屉</a>
+		</div>
+		
+<pre>
+引入"js/lbm.drawer.js"
+
+
+$('.topDrawer').eq(0).appendTo('body').drawer({
+	  direction:'top',   //抽屉的位置：top/bottom/left/right
+	  width:'100%',    //抽屉的宽度
+	  height:'50%',     //抽屉的高度
+	  openBtn:'openTopBtn',   //打开抽屉的按钮的样式名
+	  closeBtn:'mui-btn',   //关闭抽屉的按钮的样式名
+	  eventType:'click',    //触发事件设置，默认是click
+	  cb:function(){}    //回调函数
+});
+			
+</pre>
+	</div>
+</div>
+	 
+
+     <div class="topDrawer" style="text-align: center;">
+     	   <p>顶部抽屉内容</p> <p>顶部抽屉内容</p> <p>顶部抽屉内容</p> <p>顶部抽屉内容</p> <p>顶部抽屉内容</p><p>顶部抽屉内容</p> <p>顶部抽屉内容</p><p>顶部抽屉内容</p> <p>顶部抽屉内容</p><p>顶部抽屉内容</p> <p>顶部抽屉内容</p>
+           <button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">关闭</button> 
+     </div>
+     <div class="bottomDrawer" style="text-align: center;">
+     	   <p>底部抽屉内容</p> <p>底部抽屉内容</p> <p>底部抽屉内容</p> <p>底部抽屉内容</p> <p>底部抽屉内容</p><p>底部抽屉内容</p> <p>底部抽屉内容</p><p>底部抽屉内容</p> <p>底部抽屉内容</p><p>底部抽屉内容</p> <p>底部抽屉内容</p>
+           <button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">关闭</button> 
+     </div>
+     <div class="leftDrawer" style="text-align: center;">
+     	   <p>左侧抽屉内容</p> <p>左侧抽屉内容</p> <p>左侧抽屉内容</p> <p>左侧抽屉内容</p> <p>左侧抽屉内容</p><p>左侧抽屉内容</p> <p>左侧抽屉内容</p><p>左侧抽屉内容</p> <p>左侧抽屉内容</p><p>左侧抽屉内容</p> <p>左侧抽屉内容</p>
+           <button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">关闭</button> 
+     </div>
+     <div class="rightDrawer" style="text-align: center;">
+     	   <p>右侧抽屉内容</p> <p>右侧抽屉内容</p> <p>右侧抽屉内容</p> <p>右侧抽屉内容</p> <p>右侧抽屉内容</p><p>右侧抽屉内容</p> <p>右侧抽屉内容</p><p>右侧抽屉内容</p> <p>右侧抽屉内容</p><p>右侧抽屉内容</p> <p>右侧抽屉内容</p>
+           <button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">关闭</button> 
+     </div>
+
+<style>
+   /*.lbm-drawer{
+   	   position:fixed;
+   	   z-index: 999;
+   	   width:100%;
+   	   height:20%;
+   	   background: #FFFFFF;
+   	   bottom:0px;
+   	   -webkit-transition:-webkit-transform .3s ease-out;
+   	   transition:transform .3s ease-out;
+   	   -webkit-transform:translate3d(0,100%,0);
+   	   transform:translate3d(0,100%,0);
+   }*/
+   .lbm-drawer.lbm-active{
+   	  -webkit-transform:translate3d(0,0%,0);
+   	   transform:translate3d(0,0%,0);
+   } 
+</style>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+<script type="text/javascript" src="js/lbm.drawer.js" ></script>
+<script src="js/Swiper3/swiper.jquery.min.js"></script>
+
+<script type="text/ecmascript">
+   var topDrawer=$('.topDrawer').eq(0).appendTo('body').drawer({
+ 	   	 	direction:'top',
+ 	  	 	width:'100%',
+ 	  	 	height:'50%',
+ 	  	 	openBtn:'openTopBtn',
+ 	  	 	closeBtn:'mui-btn',
+ 	  	 	eventType:'click',
+ 	  	 	cb:function(){}
+   });
+   
+   
+   $('.bottomDrawer').drawer({
+ 	   	 	direction:'bottom',
+ 	  	 	width:'100%',
+ 	  	 	height:'50%',
+ 	  	 	openBtn:'openBottomBtn',
+ 	  	 	closeBtn:'mui-btn',
+ 	  	 	eventType:'click',
+ 	  	 	cb:function(){}
+   });
+   
+   $('.leftDrawer').eq(0).appendTo('body').drawer({
+ 	   	 	direction:'left',
+ 	  	 	width:'40%',
+ 	  	 	height:'100%',
+ 	  	 	openBtn:'openLeftBtn',
+ 	  	 	closeBtn:'mui-btn',
+ 	  	 	eventType:'click',
+ 	  	 	cb:function(){}
+   });
+   
+   $('.rightDrawer').eq(0).appendTo('body').drawer({
+ 	   	 	direction:'right',
+ 	  	 	width:'40%',
+ 	  	 	height:'100%',
+ 	  	 	openBtn:'openRightBtn',
+ 	  	 	closeBtn:'mui-btn',
+ 	  	 	eventType:'click',
+ 	  	 	cb:function(){}
+   });
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    
+    
+    
+</head>
+<body>
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+	        <div class="lbm-headerBack"><span class="lbm-icon-leftArrow"></span></div>
+			<h1 class="mui-title">标题标题</h1>
+			
+</header>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-content">
+		   <div class="lbm-switch-con">
+		        <label><input class="lbm-switch" id="lbm-switch" type="checkbox"> 默认未选中</label>
+	
+		   </div>
+		   <div class="lbm-switch-con">
+		        <label><input class="lbm-switch" id="" type="checkbox" checked="checked"> 默认选中</label>
+		   </div>
+	 </div>
+</div>
+<style>
+ 
+</style>	
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+
+
+  $('#lbm-switch').change(function(){
+	  	if($(this).is(':checked')) {
+		    alert('开启')
+		}else{
+			alert('关闭');
+		}
+  });
+</script>
+</body>
+</html>

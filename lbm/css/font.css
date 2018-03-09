@@ -1,0 +1,92 @@
+﻿
+/*---lbmFont----备注:只考虑移动端*/
+ @font-face {font-family: "lbmfont";
+        src:url('../fonts/lbmfont.ttf') format('truetype'); 
+}
+
+[class^="lbm-icon-"], [class*="lbm-icon-"],.lbm-barIc{
+	font-family:"lbmfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+	
+}
+.lbm-barIc{ font-size: 24px;}
+.lbm-goodsIc:before{ content: "\e640"; color: #515252;}
+.lbm-orderIc:before{ content: "\e63c"; color: #515252;}
+.lbm-stockIc:before{ content: "\e63e"; color: #515252;}
+.lbm-userIc:before{ content: "\e638"; color: #515252;}
+.lbm-active .lbm-goodsIc:before{ content: "\e641"; }
+.lbm-active .lbm-orderIc:before{ content: "\e642";}
+.lbm-active .lbm-stockIc:before{ content: "\e63b";}
+.lbm-active .lbm-userIc:before{ content: "\e644";}
+.lbm-active  .lbm-barIc{color: #0097E5; background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#34B5F7), to(#20B0FA));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
+
+.lbm-icon-Bcart:before{ content: "\e64a"; color: #E82980;}
+.lbm-icon-Binfo:before{ content: "\e648"; color: #259EE8;}
+.lbm-icon-Btall:before{ content: "\e678"; color: #B224EC;}
+.lbm-icon-Bcard:before{ content: "\e65b"; color: #3DC50F;}
+.lbm-icon-Bcall:before{ content: "\e645"; color: #F47049;}
+.lbm-icon-gather:before{ content: "\e64e"; color: #3A93F7;}
+
+ .lbm-icon-inputError:before{ content: "\e62a"; color:#E53D00; font-size:21px;}
+ .lbm-icon-lbCard:before{ content: "\e674"; }
+ .lbm-icon-goods:before{ content: "\e6c0"; }
+ .lbm-icon-order:before{ content: "\e629"; }
+ .lbm-icon-user:before{ content: "\e6ba"; } 
+ .lbm-icon-toCart:before{ content: "\e673"; } 
+ .lbm-icon-dtl:before{ content: "\e66d"; } 
+ .lbm-icon-parameter:before{ content: "\e66f"; } 
+ .lbm-icon-edit:before{ content: "\e657"; } 
+ .lbm-icon-leftArrow:before{ content: "\e680"; } 
+ .lbm-icon-success:before{ content: "\e693"; } 
+ .lbm-icon-error:before{ content: "\e661"; } 
+ .lbm-icon-delete:before{ content: "\e670"; } 
+ .lbm-icon-collection:before{ content: "\e639"; } 
+ .lbm-icon-blank:before{ content: "\e61b"; } 
+ .lbm-icon-opSuccess:before{ content: "\e618"; } 
+ .lbm-icon-opFail:before{ content: "\e63f"; } 
+ .lbm-icon-scode:before{ content: "\e66a"; }  
+ .lbm-icon-searchmx:before{ content: "\e630"; }  
+ .lbm-icon-lineDelete:before{ content: "\e62b"; }  
+ .lbm-icon-exit:before{ content: "\e669"; }  
+ .lbm-icon-down:before{ content: "\e619"; font-size: 1.6rem; padding-left: 4px; color: #4d4d4d; }  
+ .lbm-icon-priceUnit:before{ content: "\e63d";  }  
+ .lbm-icon-orderIc:before{content:"\e658"; }
+.lbm-icon-filter:before{content:"\e631"; }
+.lbm-icon-menu:before{content:"\e659"; }
+.lbm-icon-handleArrow:before{content:"\e66b"; }
+.lbm-icon-topTriangle:before{content:"\e635"; }
+.lbm-icon-outk:before{content:"\e672"; }
+.lbm-icon-ink:before{content:"\e65f"; }
+.lbm-icon-record:before{content:"\e65d"; }
+.lbm-icon-goTop:before{content:"\e696"; }
+.lbm-icon-close:before{content:"\e676"; }
+.lbm-icon-checkIc:before{content:"\e61e"; }
+.lbm-icon-index:before{content:"\e656"; }
+.lbm-icon-clipOk:before{content:"\e626"; }
+.lbm-icon-clipCancel:before{content:"\e627"; }
+.lbm-icon-clipRoLeft:before{content:"\e628"; }
+.lbm-icon-clipRoRight:before{content:"\e62f"; }
+.lbm-icon-radiusEage:before{content:"\e623"; }
+.lbm-icon-info:before{content:"\e637"; }
+.lbm-icon-arrowLeft:before{content:"\e675"; }
+.lbm-icon-filterd:before{content:"\e66c"; }
+.lbm-icon-searchd:before{content:"\e630"; }
+.lbm-icon-ecode:before{content:"\e64c"; }
+.lbm-icon-selectMenu:before{content:"\e65c"; }
+.lbm-icon-arrowRight:before{content:"\e6af"; }
+.lbm-icon-del:before{content:"\e627"; }
+.lbm-icon-waitExamine:before{content:"\e606"; }
+.lbm-icon-tip:before{content:"\e65a"; }
+.lbm-icon-time:before{content:"\e682"; }
+.lbm-icon-truck:before{content:"\e620"; }
+

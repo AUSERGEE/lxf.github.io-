@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    
+    
+    
+</head>
+<body>
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+	        <div class="lbm-headerBack"><span class="lbm-icon-leftArrow"></span></div>
+			<h1 class="mui-title">标题标题</h1>
+			
+</header>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-content">
+		 <ul>
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/gy2.jpg">aaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/gy4.jpg">aaaaaaaaaaa</li>
+		 	<li><img data-lazyload="http://www.dcloud.io/hellomui/images/3.jpg?version=525.9253613185138">aaaaaaaaaaaa</li>		 	
+		 	<li><img data-lazyload="http://www.dcloud.io/hellomui/images/1.jpg?version=854.6340721659362">aaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/sw2.jpg">aaaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/gy8.jpg">aaaaaaaaaaaa</li>		 	
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaaaa</li>		 	
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaaa</li>
+		 	<li><img data-lazyload="images/flower.png">aaaaaaaaaaaa</li>
+		 </ul>
+	</div>
+</div>
+	
+	<style>
+	   ul li>img{width:44px;height:44px;}
+	</style>
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+<script src="js/Swiper3/swiper.jquery.min.js"></script>
+
+<script type="text/javascript" src="js/mui.lazyload.js"></script>
+<script type="text/javascript" src="js/mui.lazyload.img.js"></script>
+
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+
+     (function($) {
+			$('ul').imageLazyload({
+				placeholder: 'images/gy1.jpg'
+			});
+	 })(mui);
+</script>
+</body>
+</html>

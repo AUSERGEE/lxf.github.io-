@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+</head>
+<body>
+
+<header class="mui-bar mui-bar-nav lbm-bar-nav">
+			<h1 class="mui-title">进度条demo</h1>
+</header>
+<style>
+  
+</style>
+<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+	<div class="mui-content">
+		 
+		    <div class="ifc-btnBox">
+		    	  <button type="button" class="mui-btn ifc-btn-progress">
+		    	  	 <span class="ui-btn-outer">获取验证码</span>
+		             <span class="ui-btn-inner" ><span>获取验证码</span></span>
+		    	  </button>
+		    </div>
+   
+		 
+
+  	
+	
+	
+    </div>
+	
+	
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+<script src="js/lbm-processBtn.js"></script>
+<script>
+  /*调用ifc-progressBtn*/
+$('.ifc-btn-progress').progressBtn({
+	 		innerName:'.ui-btn-inner', 
+	 		eventType:'click',
+	 		outerSpan:'.ui-btn-outer',
+	 		innerSpan:'.ui-btn-inner>span',
+	 		SucessfulCallBack: function() {alert('123');},
+	 		btnTime:3   //倒计时长
+	 	});
+	 	
+	 	
+	$('.ifc-tap-item').click(function(){
+		if($(this).hasClass('ifc-active')){
+			$(this).removeClass('ifc-active');
+			return;
+		}
+		$(this).addClass('ifc-active');
+	});
+
+</script>
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    
+    <link rel="stylesheet" href="../css/ifcui.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="css/mui.min.css" />
+    <link rel="stylesheet" href="css/lbm.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/mui.min.js"></script>
+    <script src="js/lbm.js"></script>
+</head>
+<body style="margin: 0;">
+     
+     <a href="javascript:;" class="ifcui-btn opaenToast" style="margin-top: 100px;">点击显示toast</a>
+     <section class="dom-content" style="max-width:366px;">
+     	  <h5 style="font-size: 22px; font-weight: bold;">lbm.toast()参数设置:</h5>
+     	  <p>示例：lbm.toast('操作成功','bottom',22222,'lbm-icon-success');</p>
+     	  <p>参数1：文字内容；</p>
+     	  <p>参数2：显示的位置；middle或者bottom；默认是bottom</p>
+     	  <p>参数3：显示的时间；默认是2秒</p>
+     	  <p>参数4：图标的样式名；不写默认没有（成功：lbm-icon-success；错误：lbm-icon-error）</p>
+          <h6 style="background: #218BEE; color: #FFF;">依赖于：lbm.css和lbm.js-</h6>
+     </section>
+    <!--<div class="lbm-toast">
+    	<div class="weui-mask_transparent"></div>
+    	<div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">已完成dsdsddsdsdsdsddsd</p>
+        </div>
+    </div>-->
+    
+    <style>
+	  
+    </style>
+     
+<script>
+  
+  
+   $('.opaenToast').click(function(){
+   	  lbm.toast('操作失败','middle',922,'lbm-icon-success');
+   });
+   
+   
+
+ </script>
+ 
+ 
+</body>
+</html>

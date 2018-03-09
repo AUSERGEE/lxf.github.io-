@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>标题</title>
+    <script src="js/mui.min.js"></script>
+    <link href="js/Swiper3/css/swiper.css" rel="stylesheet"/>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="js/mobilebone/mobilebone.css">
+    
+</head>
+<body>
+<div id="pageHome" class="page out" style="overflow:auto;">	
+		<nav class="mui-bar mui-bar-tab lbm-bar-tab">
+		<a href="index.html" class="lbm-tab-item">
+		    <span class="lbm-barIc lbm-goodsIc"></span>
+		    <span class="lbm-tab-label">商品</span>
+		</a>
+		<a href="customerorders.html" class="lbm-tab-item lbm-active">
+		    <span class="lbm-barIc lbm-orderIc"></span>
+		    <span class="lbm-tab-label">订单</span>
+		</a>
+		<a href="aboutmyself.html" class="lbm-tab-item">
+		    <span class="lbm-barIc lbm-userIc"></span>
+		    <span class="lbm-tab-label">我的</span>
+		</a>
+		</nav>
+		 <!--列表切换选项卡-->
+		    <div class="clearFix lbm-tabIndex">
+		        <ul>
+		            <li class="active">待确认<i class="mesTip">2</i></li>
+		            <li>待收货</li>
+		            <li>全部订单<i class="mesTip">22</i></li>
+		        </ul>
+		    </div>
+		<!--<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper paddingTop-0">
+			<div class="mui-content">-->
+			
+		
+		    <!--列表内容-->
+		    <div class="swiper-container tab-swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide lbm-tab-1"><!--待确认选项卡内容区-->
+		            	<div class="myOrderCatalog mui-scroll" >  <!--订单列表div-->
+		            		<div class="orderCatalogItem"> <!--单个订单div-->
+		            		   <a href="#">
+			            			<h3 class="orderItemTit">
+			            				订单编号：4500000001 
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<span>共2种商品，合计¥120,000.00 (运费另计¥0.00)</span>
+									 </div>
+							    </a>
+		            		</div>
+		            		<div class="orderCatalogItem">
+		            		   <a href="#">
+			            			<h3 class="orderItemTit">
+			            				订单编号：4500000001 
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<span>共2种商品，合计¥120,000.00 (运费另计¥0.00)</span>
+									 </div>
+							    </a>
+		            		</div>
+		            	</div>
+		            	<div class="blankTipBox">
+		            	    <i class="lbm-icon-blank"></i>
+		            	    <p class="blankTipTxt">暂无订单</p>
+		            	</div>
+		            </div><!--待确认选项卡内容区*结束-->
+		            <div class="swiper-slide lbm-tab-2"><!--待收货选项卡内容区-->
+		            	<div class="myOrderCatalog">
+		            		<div class="orderCatalogItem">
+		            		   <a href="#">
+			            			<h3 class="orderItemTit">
+			            				出货单号：4500000001 
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<p><span>订单编号：4500000002</span></p>
+									 	<p><span>出货数量：120</span><span>出库时间：2016-12-29 11:30:02</span></p>
+									 </div>
+							    </a>
+		            		</div>
+		            	</div>
+		            	<div class="blankTipBox">
+		            	    <i class="lbm-icon-blank"></i>
+		            	    <p class="blankTipTxt">暂无订单</p>
+		            	</div>
+		            </div><!--待收货选项卡内容区*结束-->
+		            <div class="swiper-slide lbm-tab-3"><!--全部订单选项卡内容区-->
+		            	<div class="myOrderCatalog">  <!--订单列表div-->
+		            		<div class="orderCatalogItem"> <!--单个订单div-->
+		            		   <a href="#">
+			            			<h3 class="orderItemTit">
+			            				订单编号：4500000001 
+			            				<span class="order-status">待审核</span>
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<span>共2种商品，合计¥120,000.00 (运费另计¥0.00)</span>
+									 </div>
+							    </a>
+		            		</div>
+		            		<div class="orderCatalogItem"> <!--单个订单div-->
+		            		   <a href="#">
+			            			<h3 class="orderItemTit">
+			            				订单编号：2222500000001 
+			            				<span class="order-status">待审核</span>
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<span>共2种商品，合计¥120,000.00 (运费另计¥0.00)</span>
+									 </div>
+							    </a>
+		            		</div>
+		            		
+		            		<div class="orderCatalogItem">
+		            		   <a href="mobileboneLinkPage.html">
+			            			<h3 class="orderItemTit">
+			            				订单编号：000000000000
+			            				<span class="order-status">待确认</span>
+			            			</h3>
+			            			<div class="myOrderList">
+									      <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">单页跳转链接</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+										   <div class="orderListItem">
+										 		<div class="lbm_flexbox">
+									                	<span class="cartlist-img">
+									                		<img src="images/goodsImg.jpg" />
+									                	</span>
+									                	<div class="info-box lbm_flex1">
+									                	     <strong class="cartItem-title ellipsis_two">CONVERSE 匡威 2017经典款春季休闲wifi 男鞋</strong>
+									                	</div>
+									                	<div class="goodsSideBox">
+									                		<p class="SideBoxPrice">￥192.00</p>
+									                		<p class="SideBoxSum">×3pc</p>
+									                	</div>
+									            </div>
+										   </div>
+									 </div>
+									 <div class="orderCatalogFooter">
+									 	<span>共2种商品，合计¥120,000.00 (运费另计¥0.00)</span>
+									 </div>
+							    </a>
+		            		</div>
+		            	</div>
+		            	<div class="blankTipBox">
+		            	    <i class="lbm-icon-blank"></i>
+		            	    <p class="blankTipTxt">暂无订单</p>
+		            	</div>
+		            </div><!--全部订单选项卡内容区*结束-->
+		        </div>
+		    </div>
+		<!--</div>
+		</div>
+			-->
+		
+		
+		</div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/lbm.js" ></script>
+<script src="js/Swiper3/swiper.jquery.min.js"></script>
+<script src="js/mobilebone/mobilebone.js"></script>
+<script type="text/ecmascript">
+    <!--mui.init({
+        swipeBack: true //启用右滑关闭功能
+        
+    });
+
+    mui('#offCanvasContentScroll').scroll();
+	
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});-->
+
+</script>
+<script>
+$(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            onSlideChangeEnd: function (swiper) {
+                var j=mySwiper.activeIndex;
+                $('.lbm-tabIndex li, .maple-tab2 li').removeClass('active').eq(j).addClass('active');
+            }
+        })
+        /*列表切换*/
+        $('.lbm-tabIndex li, .maple-tab2 li').on('click', function (e) {
+            e.preventDefault();
+            //得到当前索引
+            var i=$(this).index();
+            $('.lbm-tabIndex li, .maple-tab2 li').removeClass('active').eq(i).addClass('active');
+            mySwiper.slideTo(i,1000,false);
+        });
+    });
+    
+    
+    
+     mui.init({  
+              pullRefresh : {  
+                container:".myOrderCatalog",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等  
+                up : {  
+                  height:50,//可选.默认50.触发上拉加载拖动距离  
+                  auto:true,//可选,默认false.自动上拉加载一次  
+                  contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容  
+                  contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；  
+                  callback :more //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；  
+                }  
+              }  
+            });  
+//          mui('.myOrderCatalog').scroll();
+            var page=1;  
+            function more(page){  
+                $(".myOrderCatalog").append("1")  
+                page+=1  
+                this.endPullupToRefresh(false);//false 还有更多数据  true还有更多数据  
+            }  
+</script>
+</body>
+</html>
