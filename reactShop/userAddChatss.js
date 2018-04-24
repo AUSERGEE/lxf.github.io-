@@ -1,7 +1,6 @@
 
 //*****************input中的用户名添加聊天弹框**start***********************************
-if(userToken.Account=="SDT13841"){
-
+if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
       var addChatIconObj={
          'IT_HDApplicant.HRID':{userId:'',userInputName:"IT_HDApplicant.Name"},
          'IT_HDApplicant.Sub_HRID':{userId:'',userInputName:"IT_HDApplicant.Sub_Name"},
@@ -60,7 +59,7 @@ if(userToken.Account=="SDT13841"){
                
                
                  (function(userId,curUsrNameValue,curUsrNameInput){
-                    var appendHtmlStr=$('<span userId="'+userId+'">'
+                    var appendHtmlStr=$('<span userId="'+userId+'" style="cursor:pointer;">'
                        +curUsrNameValue
                        +'<img src="/BPM/Styles/ui/icons/smsg.png" width="16" height="16" style="vertical-align:top;margin-left: 3px;">'
                        +'</span>').on('click',function(){userMessageDialog(userId,pageTid,"") });
@@ -85,7 +84,7 @@ if(userToken.Account=="SDT13841"){
          return theRequest.tid
       }
 
-  
+
 }
 
 
