@@ -18,7 +18,7 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
          'GNHT_Applicant_All.AppHRID':{userId:'',userInputName:"GNHT_Applicant_All.AppHRName"},
          'GNHKHT_Applicant_All.AppHRID':{userId:'',userInputName:"GNHKHT_Applicant_All.AppHRName"},
          'QTHT_Applicant_All.AppHRID':{userId:'',userInputName:"QTHT_Applicant_All.AppHRName"},
-         'QTHT_Applicant_All.htzrr':{userId:'',userInputName:"QTHT_Applicant_All.htzrr"},
+         'QTHT_Applicant_All.htzrrHRID':{userId:'',userInputName:"QTHT_Applicant_All.htzrr"},
          'TTC_Applicant.AppHRID':{userId:'',userInputName:"TTC_Applicant.AppHRName"},
          'KDHT_Applicant_All.AppHRID':{userId:'',userInputName:"KDHT_Applicant_All.AppHRName"},
          'KDHT_Applicant_All.SalesHRID':{userId:'',userInputName:"KDHT_Applicant_All.SalesHRName"},
@@ -46,7 +46,16 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
       //仅对于it类，合同类表单进行处理
       setTimeout(function(){
           if (typeof jQuery!= 'undefined'
-              &&((pageUrl.indexOf('YZSoft/Forms/XForm/国内合同审批/')!=-1||pageUrl.indexOf('YZSoft/Forms/XForm/IT/')!=-1))) { 
+              &&(pageUrl.indexOf('YZSoft/Forms/XForm/国内合同审批/')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/IT/')!=-1
+                ||pageUrl.indexOf('工作报告/工作报告')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/其它合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/第三方授权合同/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/宽带合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
+              )) { 
                   nameAddChatIcon();
             }
       },280);    
