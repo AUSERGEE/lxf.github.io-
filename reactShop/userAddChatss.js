@@ -32,24 +32,24 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
       };
 
       //目前包括it页面和合同相关页面
-      var needChatTidArr=['609775','609636','609281','606471','608081','609805','511463',
-                           '609654','609178','609824','602244','609833','595796','606328','552809',
-                           '609769','275211','608256','608245','597368','274557','317056'
-                         ];
+      // var needChatTidArr=['609775','609636','609281','606471','608081','609805','511463',
+      //                      '609654','609178','609824','602244','609833','595796','606328','552809',
+      //                      '609769','275211','608256','608245','597368','274557','317056'
+      //                    ];
       //测试环境的tid
       // var needChatTidArr=['317056','316512','310417','317131','316160','316061'
       //                    ];
+      
+      var pageTid=getTid();  //获取页面tid
+      var pageUrl=decodeURIComponent(location.href);  //jQuery方法对url进行解码
 
-      var pageTid=getTid();
-      if(needChatTidArr.indexOf(pageTid)!=-1){
-        setTimeout(function(){
-          if (typeof jQuery!= 'undefined') { 
-                 nameAddChatIcon();
-              }
-        },180)
-         
-      }
-
+      //仅对于it类，合同类表单进行处理
+      setTimeout(function(){
+          if (typeof jQuery!= 'undefined'
+              &&((pageUrl.indexOf('YZSoft/Forms/XForm/国内合同审批/')!=-1||pageUrl.indexOf('YZSoft/Forms/XForm/IT/')!=-1))) { 
+                  nameAddChatIcon();
+            }
+      },280);    
       function nameAddChatIcon(){
         for(var key in addChatIconObj){
           var curUsrNameInput=addChatIconObj[key].userInputName;
@@ -70,7 +70,7 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
         }
 
       }
-
+       
       function getTid(){
         var url = location.search;
           var theRequest={}
