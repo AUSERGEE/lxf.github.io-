@@ -10,7 +10,7 @@ td[bgcolor="#d1dedf"]{background:#F4F8FF;height: 32px;
     position: relative;
     line-height: 32px;
     padding-left:28px;}
-td[bgcolor="#d1dedf"]:before{     content: '1';
+td[bgcolor="#d1dedf"]:before{     content: attr(titIndex);
     text-align: center;
     line-height: 20px;
     color: #FFF;
