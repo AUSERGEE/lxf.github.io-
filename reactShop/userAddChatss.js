@@ -75,7 +75,7 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
                        +'<img src="/BPM/Styles/ui/icons/smsg.png" width="16" height="16" style="vertical-align:top;margin-left: 3px;">'
                        +'</span>')
                        .on('click',function(){
-                          if($(this).attr('userId')=='SDT14217') {
+                          if($(this).attr('userId')==userToken.Account) {
                               alert('不能和自己进行对话');
                               return
                           }else{
