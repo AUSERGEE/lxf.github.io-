@@ -28,7 +28,8 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
          'HWHT_Applicant_Main.SalesHRID':{userId:'',userInputName:"HWHT_Applicant_Main.SalesHRName"},
          'HWHT_Applicant_Main.MarketHRID':{userId:'',userInputName:"HWHT_Applicant_Main.MarketHRName"},
          'LSHT_Applicant_All.SalesHRID':{userId:'',userInputName:"LSHT_Applicant_All.SalesHRName"},
-         'LSHT_Applicant_All.MarketHRID':{userId:'',userInputName:"LSHT_Applicant_All.MarketHRName"}
+         'LSHT_Applicant_All.MarketHRID':{userId:'',userInputName:"LSHT_Applicant_All.MarketHRName"},
+         'RetailSoftPublish.AppID':{userId:'',userInputName:"RetailSoftPublish.AppName"}
       };
 
       //目前包括it页面和合同相关页面
@@ -64,6 +65,7 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
           var curUsrNameInput=addChatIconObj[key].userInputName;
             var curUsrNameValue=$('[xdatabind="'+curUsrNameInput+'"]').val();
             var userId=$('[xdatabind="'+key+'"]').val();
+          
           if($('[xdatabind="'+key+'"]').length&&curUsrNameValue&&curUsrNameValue!=''){
                
                
@@ -71,7 +73,15 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
                     var appendHtmlStr=$('<span userId="'+userId+'" style="cursor:pointer;">'
                        +curUsrNameValue
                        +'<img src="/BPM/Styles/ui/icons/smsg.png" width="16" height="16" style="vertical-align:top;margin-left: 3px;">'
-                       +'</span>').on('click',function(){userMessageDialog(userId,pageTid,"") });
+                       +'</span>')
+                       .on('click',function(){
+                          if($(this).attr('userId')=='SDT14217') {
+                              alert('不能和自己进行对话');
+                              return
+                          }else{
+                             userMessageDialog(userId,pageTid,"")
+                          }
+                        });
                     $('[xdatabind="'+curUsrNameInput+'"]').hide().parent().append(appendHtmlStr)
                })(userId,curUsrNameValue,curUsrNameInput)
             }
