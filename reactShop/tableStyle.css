@@ -8,17 +8,16 @@ table td{border-color:#85ade4!important;}
 td[bgcolor="#d1dedf"]{background:#F4F8FF;height: 32px;
     position: relative;
     line-height: 32px;
-    padding-left: 31px;}
-td[bgcolor="#d1dedf"]:before{    content: '1';
-    text-align:center;
-    line-height:20px;
-    color:#FFF;
+    padding-left:28px;}
+td[bgcolor="#d1dedf"]:before{     content: '1';
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
     display: inline-block;
     height: 20px;
     width: 21px;
     position: absolute;
-    background: #0097e5;
+    background: #3998ff;
     top: 5px;
-    left: 7px;
-    line-height: 33px;}
+    left: 3px;}
 /*****************************************************/
