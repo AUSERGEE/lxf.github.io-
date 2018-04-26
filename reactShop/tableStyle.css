@@ -5,6 +5,20 @@ table thead td {font-size: 12px;color: #333333;text-align: center;
 border: 1px solid #6495ed; font-weight:bold;}
 table tbody tr {background: #fff;font-size: 12px;color: #666666;border-color:#6495ed!important;}
 table td{border-color:#85ade4!important;}
-td[bgcolor="#d1dedf"]{background:#F4F8FF;}
-td[bgcolor="#d1dedf"]:before{content:''; display:inline-block; height:20px; width:20px; background:#0097e5;}
+td[bgcolor="#d1dedf"]{background:#F4F8FF;height: 32px;
+    position: relative;
+    line-height: 32px;
+    padding-left: 31px;}
+td[bgcolor="#d1dedf"]:before{    content: '1';
+    text-align:center;
+    line-height:20px;
+    color:#FFF;
+    display: inline-block;
+    height: 20px;
+    width: 21px;
+    position: absolute;
+    background: #0097e5;
+    top: 5px;
+    left: 7px;
+    line-height: 33px;}
 /*****************************************************/
