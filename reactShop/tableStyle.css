@@ -1,7 +1,6 @@
-﻿
+
 /*****************************************************/
 body{border-width: 0!important;}
-table {}
 table thead td {font-size: 12px;color: #333333;text-align: center;
 border: 1px solid #6495ed; font-weight:bold;}
 table tbody tr {background: #fff;font-size: 12px;color: #666666;border-color:#6495ed!important;}
@@ -53,6 +52,5 @@ table td{border-color:#85ade4!important;}
     font-style:normal;
     font-weight: bold;
 }
-
 
 /*****************************************************/
