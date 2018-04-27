@@ -108,3 +108,58 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
 
 
 //*****************input中的用户名添加聊天弹框**end***********************************
+
+
+//*****************表单样式相关脚本**start***********************************
+var bpmDocument=(function(){
+    var ready=function(callback){
+    if(document.addEventListener){
+     document.addEventListener("DOMContentLoaded",function(){
+      document.removeEventListener("DOMContentLoaded",arguments.callee,false);
+      callback();
+    },false);
+    }else if(document.attachEvent){
+     document.attachEvent("onreadystatechange",function(){
+      if ( document.readyState === "complete" ) {
+       document.detachEvent( "onreadystatechange", arguments.callee );
+       callback();
+      }
+     })
+    }
+    }
+    return {
+    ready:ready
+    }
+})()
+
+
+ try {
+    bpmDocument.ready(function(){
+      if (typeof jQuery!= 'undefined'
+              &&(pageUrl.indexOf('YZSoft/Forms/XForm/国内合同审批/')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/IT/')!=-1
+                ||pageUrl.indexOf('工作报告/工作报告')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/其它合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/第三方授权合同/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/宽带合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
+                ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
+              )) 
+      { 
+          $('<link href="http://172.28.253.126:8080/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
+          $('.labelTd').parents('td').css({'background':'#f4f8ff'});
+          $('.TitTd').each(function(index,item){
+            $(item).append('<i class="indexLabek">'+(index+1)+'</i>')
+          });
+      }
+       
+     })
+  }
+  catch(err){
+
+  }
+
+
+
+//*****************表单样式相关脚本**end***********************************
