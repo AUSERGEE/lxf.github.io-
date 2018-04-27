@@ -24,4 +24,17 @@ td[bgcolor="#d1dedf"]:before{     content:'';
 td[bgcolor="#d1dedf"]::nth-child(1):before{ content:'1'; }
 td[bgcolor="#d1dedf"]::nth-child(2):before{ content:'2'; }
 td[bgcolor="#d1dedf"]::nth-child(3):before{ content:'3'; }
+.indexLabek{ 
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    display: inline-block;
+    height: 20px;
+    width: 21px;
+    position: absolute;
+    background: #3998ff;
+    top: 5px;
+    left: 3px;
+    z-index:2;
+}
 /*****************************************************/
