@@ -156,7 +156,7 @@ var bpmDocument=(function(){
               $(".TitTd:visible").each(function(index,item){
                 $(item).append('<i class="indexLabek">'+(index+1)+'</i>')
               });
-          },200);
+          },420);
               
       }
        
