@@ -147,11 +147,13 @@ var bpmDocument=(function(){
                 ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
               )) 
       { 
-          $('<link href="http://172.28.253.126:8080/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
+          $('<link href="http://bpm.sdt.com/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
           $('.labelTd').parents('td').css({'background':'#f4f8ff'});
-          $('table').not('.mytable').find('td').css({'border-color':'#85ade4!important'});
+          $('table[class!="mytable"][class!="AA"]').find('td').each(function(index,item){
+             $(item).css({'border-color':'#E2E5E9'});
+          })
           setTimeout(function(){
-              $(".TitTd :visible").each(function(index,item){
+              $(".TitTd:visible").each(function(index,item){
                 $(item).append('<i class="indexLabek">'+(index+1)+'</i>')
               });
           },200);

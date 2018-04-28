@@ -19,8 +19,10 @@ body{border-width: 0!important;}
 .TitTd{background:#F4F8FF;height: 32px;
     position: relative;
     line-height: 32px;
+    padding: 0 4px 0 2px!important;
     padding-left:28px!important;
-    color: #3998ff;
+    color: #0a60ab!important;
+    box-sizing: border-box;
  }
 .TitTd:before{     content:'';
     text-align: center;
