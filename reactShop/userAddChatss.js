@@ -149,9 +149,13 @@ var bpmDocument=(function(){
       { 
           $('<link href="http://172.28.253.126:8080/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
           $('.labelTd').parents('td').css({'background':'#f4f8ff'});
-          $('.TitTd').each(function(index,item){
-            $(item).append('<i class="indexLabek">'+(index+1)+'</i>')
-          });
+          $('table').not('.mytable').find('td').css({'border-color':'#85ade4!important'});
+          setTimeout(function(){
+              $(".TitTd :visible").each(function(index,item){
+                $(item).append('<i class="indexLabek">'+(index+1)+'</i>')
+              });
+          },200);
+              
       }
        
      })

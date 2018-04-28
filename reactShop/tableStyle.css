@@ -1,10 +1,6 @@
 
 /*****************************************************/
 body{border-width: 0!important;}
-table thead td {font-size: 12px;color: #333333;text-align: center;
-border: 1px solid #6495ed; font-weight:bold;}
-table tbody tr {background: #fff;font-size: 12px;color: #666666;border-color:#6495ed!important;}
-table td{border-color:#85ade4!important;}
 .bak_td[bgcolor="#d1dedf"]{background:#F4F8FF;height: 32px;
     position: relative;
     line-height: 32px;
@@ -23,7 +19,7 @@ table td{border-color:#85ade4!important;}
 .TitTd{background:#F4F8FF;height: 32px;
     position: relative;
     line-height: 32px;
-    padding-left:28px;
+    padding-left:28px!important;
     color: #3998ff;
  }
 .TitTd:before{     content:'';
@@ -52,5 +48,9 @@ table td{border-color:#85ade4!important;}
     font-style:normal;
     font-weight: bold;
 }
-
+.bgBlue{background:#F4F8FF;}
+.TitTd>p{padding-left:26px;}
 /*****************************************************/
+ class="TitTd" 
+ class="labelTd" 
+ class="bgBlue"
