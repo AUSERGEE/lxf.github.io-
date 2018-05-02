@@ -71,7 +71,12 @@ body{border-width: 0!important;}
     font-weight: bold;
 }
 .bgBlue{background:#F4F8FF;}
+.bgBlue_Tit{
+    background: #F4F8FF!important;
+    height: 34px!important;
+}
 /*****************************************************/
  class="TitTd" 
  class="labelTd" 
  class="bgBlue"
+ <span class="indexLabek"></span>
