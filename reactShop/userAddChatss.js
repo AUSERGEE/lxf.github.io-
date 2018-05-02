@@ -142,6 +142,7 @@ var bpmDocument=(function(){
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/其它合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/第三方授权合同/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/宽带合同审批/')!=-1
+                ||pageUrl.indexOf('Forms/XForm/广告运营合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1

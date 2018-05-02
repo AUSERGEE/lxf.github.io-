@@ -22,6 +22,26 @@ body{border-width: 0!important;}
     padding: 0 4px 0 2px!important;
     padding-left:28px!important;
     color: #0a60ab!important;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+ }
+ .TitTd_byhand{background:#F4F8FF;height: 32px;
+    position: relative;
+    line-height: 32px;
+    padding: 0 4px 0 2px!important;
+    padding-left:28px!important;
+    color: #0a60ab!important;
+    font-weight: bold;
+    font-size: 14px;
+    box-sizing: border-box;
+ }
+ .TitTdNoIndex{background:#F4F8FF;height: 32px;
+    line-height: 32px;
+    padding: 0 4px 0 2px!important;
+    color: #0a60ab!important;
+    font-weight: bold;
+    font-size: 14px;
     box-sizing: border-box;
  }
 .TitTd:before{     content:'';
@@ -51,7 +71,6 @@ body{border-width: 0!important;}
     font-weight: bold;
 }
 .bgBlue{background:#F4F8FF;}
-.TitTd>p{padding-left:26px;}
 /*****************************************************/
  class="TitTd" 
  class="labelTd" 
