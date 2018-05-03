@@ -29,6 +29,7 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
          'HWHT_Applicant_Main.MarketHRID':{userId:'',userInputName:"HWHT_Applicant_Main.MarketHRName"},
          'LSHT_Applicant_All.SalesHRID':{userId:'',userInputName:"LSHT_Applicant_All.SalesHRName"},
          'LSHT_Applicant_All.MarketHRID':{userId:'',userInputName:"LSHT_Applicant_All.MarketHRName"},
+         'GGHT_Applicant_All.AppHRID':{userId:'',userInputName:"GGHT_Applicant_All.AppHRName"},
          'RetailSoftPublish.AppID':{userId:'',userInputName:"RetailSoftPublish.AppName"}
       };
 
@@ -142,7 +143,6 @@ var bpmDocument=(function(){
                 ||pageUrl.indexOf('工作报告/工作报告')!=-1
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/其它合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/第三方授权合同/')!=-1
-                ||pageUrl.indexOf('Forms/XForm/宽带合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/广告运营合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
@@ -152,7 +152,7 @@ var bpmDocument=(function(){
           $('<link href="http://bpm.sdt.com/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
           $('.labelTd').parents('td').css({'background':'#f4f8ff'});
           $('table[class!="mytable"][class!="AA"]').find('td').each(function(index,item){
-             $(item).css({'border-color':'#E2E5E9'});
+             $(item).css({'border-color':'#e8f0f9'});
           })
           setTimeout(function(){
               $(".TitTd:visible").each(function(index,item){

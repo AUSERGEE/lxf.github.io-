@@ -20,8 +20,8 @@ body{border-width: 0!important;}
     position: relative;
     line-height: 32px;
     padding: 0 4px 0 2px!important;
-    padding-left:28px!important;
-    color: #0a60ab!important;
+    padding-left:31px!important;
+    color: #2f8ef5!important;
     font-weight: bold;
     font-size: 14px;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ body{border-width: 0!important;}
     height: 20px;
     width: 21px;
     position: absolute;
-    background: #3998ff;
+    background: #cacaca;
     top: 5px;
     left: 3px;
     z-index:2;
@@ -74,6 +74,14 @@ body{border-width: 0!important;}
 .bgBlue_Tit{
     background: #F4F8FF!important;
     height: 34px!important;
+}
+.labelTd{padding-right: 4px;color: #474a8e!important;}
+
+
+label[for^='XRadioButtonLi']{vertical-align: super;}
+label[for^='XCheckBox']{vertical-align: super;}
+input[disabled='disabled'] {
+    background: #f9fafd;
 }
 /*****************************************************/
  class="TitTd" 
