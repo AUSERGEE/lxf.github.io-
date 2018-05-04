@@ -79,10 +79,10 @@ body{border-width: 0!important;}
 .td_label{color:#474a8e;}
 
 label[for^='XRadioButtonLi']{vertical-align: middle;}
-input[for^='XRadioButtonLi']{vertical-align: middle; margin-top: 0;}
+input[id^='XRadioButtonLi']{vertical-align: middle; margin-top: 0;}
 label[for^='XCheckBox']{vertical-align: middle;}
-input[for^='XCheckBoxList']{vertical-align: middle; margin-top: 0;}
-input[type="text" i]:disabled {
+input[id^='XCheckBoxList']{vertical-align: middle; margin-top: 0;}
+input[type="text" i]:disabled,textarea:disabled{
     background: #f9fafd;
 }
 /*****************************************************/
