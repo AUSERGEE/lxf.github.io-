@@ -52,7 +52,7 @@ body{border-width: 0!important;}
     height: 20px;
     width: 21px;
     position: absolute;
-    background: #3998ff;
+    background: #cacaca;
     top: 5px;
     left: 3px;}
 .indexLabek{
@@ -76,11 +76,13 @@ body{border-width: 0!important;}
     height: 34px!important;
 }
 .labelTd{padding-right: 4px;color: #474a8e!important;}
+.td_label{color:#474a8e;}
 
-
-label[for^='XRadioButtonLi']{vertical-align: super;}
-label[for^='XCheckBox']{vertical-align: super;}
-input[disabled='disabled'] {
+label[for^='XRadioButtonLi']{vertical-align: middle;}
+input[for^='XRadioButtonLi']{vertical-align: middle; margin-top: 0;}
+label[for^='XCheckBox']{vertical-align: middle;}
+input[for^='XCheckBoxList']{vertical-align: middle; margin-top: 0;}
+input[type="text" i]:disabled {
     background: #f9fafd;
 }
 /*****************************************************/

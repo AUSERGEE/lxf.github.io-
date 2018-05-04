@@ -152,7 +152,7 @@ var bpmDocument=(function(){
           $('<link href="http://bpm.sdt.com/style/bpmstyle.css" type="text/css" rel="stylesheet"/>').appendTo("head");
           $('.labelTd').parents('td').css({'background':'#f4f8ff'});
           $('table[class!="mytable"][class!="AA"]').find('td').each(function(index,item){
-             $(item).css({'border-color':'#e8f0f9'});
+             $(item).css({'border-color':'#dedede'});
           })
           setTimeout(function(){
               $(".TitTd:visible").each(function(index,item){
