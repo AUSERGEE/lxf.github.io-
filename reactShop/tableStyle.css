@@ -74,6 +74,7 @@ body{border-width: 0!important;}
 .bgBlue_Tit{
     background: #F4F8FF!important;
     height: 34px!important;
+    color: #2f8ef5!important;
 }
 .labelTd{padding-right: 4px;color: #474a8e!important;}
 .td_label{color:#474a8e;}
@@ -81,7 +82,9 @@ body{border-width: 0!important;}
 label[for^='XRadioButtonLi']{vertical-align: middle;}
 input[id^='XRadioButtonLi']{vertical-align: middle; margin-top: 0;}
 label[for^='XCheckBox']{vertical-align: middle;}
-input[id^='XCheckBoxList']{vertical-align: middle; margin-top: 0;}
+input[id^='XCheckBox']{vertical-align: middle; margin-top: 0;}
+label[for^='xrdLanguag'],label[for^='xrdUrgen']{vertical-align: middle;}
+input[id^='xrdLanguag'],input[id^='xrdUrgen']{vertical-align: middle; margin-top: 0;}
 input[type="text" i]:disabled,textarea:disabled{
     background: #f9fafd;
 }
@@ -90,3 +93,4 @@ input[type="text" i]:disabled,textarea:disabled{
  class="labelTd" 
  class="bgBlue"
  <span class="indexLabek"></span>
+ 
