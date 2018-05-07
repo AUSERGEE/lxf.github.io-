@@ -171,3 +171,21 @@ var bpmDocument=(function(){
 
 
 //*****************表单样式相关脚本**end***********************************
+
+
+
+
+if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
+
+//*****************textarea 初始化撑开**start***********************************
+
+   for(var i=0,lenn=$('textarea').length;i<lenn;i++){
+       var curTextarea=$('textarea')[i];
+       curTextarea.style.height =parseInt(curTextarea.style.height)+curTextarea.scrollHeight + "px";
+      
+
+    }
+
+//*****************textarea 初始化撑开**end***********************************
+
+}

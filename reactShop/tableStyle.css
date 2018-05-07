@@ -88,6 +88,42 @@ input[id^='xrdLanguag'],input[id^='xrdUrgen']{vertical-align: middle; margin-top
 input[type="text" i]:disabled,textarea:disabled{
     background: #f9fafd;
 }
+.mytable{border: 1px solid #d1d3df;}
+
+#HEADC {
+    font-weight: bold;
+    font-size: 15px;
+    color: #2f8ef5;
+    background-color: #f4f8ff;
+    height: 30px;
+    line-height: 30px;
+}
+
+input[id='mailBtn']{
+  vertical-align: middle;
+}
+
+TABLE.AA TR.DataRow TD {
+    color: #666;
+}
+#btnTaskCommentReply{
+	background: #2dc3e8;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+}
+#TaskCommentCount{color: #666; }
+TABLE.AA TR.DataRow {
+    BACKGROUND-COLOR: #f5f5f5;
+}
+TABLE.AA TR.Running TD.NoCell {
+    BACKGROUND-COLOR: #f4f8ff;
+}
+div.attach .item{    
+	background: #edf7ed;
+    border: 1px solid #c2efc2;
+}
 /*****************************************************/
  class="TitTd" 
  class="labelTd" 
