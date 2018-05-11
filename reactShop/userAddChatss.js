@@ -172,20 +172,37 @@ var bpmDocument=(function(){
 
 //*****************表单样式相关脚本**end***********************************
 
+function isIE() { //ie?
+ if (!!window.ActiveXObject || "ActiveXObject" in window)
+  return true;
+  else
+  return false;
+ }
 
+bpmDocument.ready(function(){
+    if (typeof jQuery!= 'undefined'&&!isIE()
+                  &&(pageUrl.indexOf('YZSoft/Forms/XForm/国内合同审批/')!=-1
+                    ||pageUrl.indexOf('YZSoft/Forms/XForm/IT/')!=-1
+                    ||pageUrl.indexOf('工作报告/工作报告')!=-1
+                    ||pageUrl.indexOf('YZSoft/Forms/XForm/其它合同审批/')!=-1
+                    ||pageUrl.indexOf('Forms/XForm/第三方授权合同/')!=-1
+                    ||pageUrl.indexOf('Forms/XForm/宽带合同审批/')!=-1
+                    ||pageUrl.indexOf('Forms/XForm/广告运营合同审批/')!=-1
+                    ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
+                    ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
+                    ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
+                  )) { 
 
+    //*****************textarea 初始化撑开**start***********************************
 
-if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
+       for(var i=0,lenn=$('textarea').length;i<lenn;i++){
+           var curTextarea=$('textarea')[i];
+           curTextarea.style.height =parseInt(curTextarea.style.height)+curTextarea.scrollHeight + "px";
+          
 
-//*****************textarea 初始化撑开**start***********************************
+        }
 
-   for(var i=0,lenn=$('textarea').length;i<lenn;i++){
-       var curTextarea=$('textarea')[i];
-       curTextarea.style.height =parseInt(curTextarea.style.height)+curTextarea.scrollHeight + "px";
-      
+    //*****************textarea 初始化撑开**end***********************************
 
     }
-
-//*****************textarea 初始化撑开**end***********************************
-
 }

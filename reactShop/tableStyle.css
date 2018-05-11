@@ -82,7 +82,9 @@ body{border-width: 0!important;}
 label[for^='XRadioButtonLi']{vertical-align: middle;}
 input[id^='XRadioButtonLi']{vertical-align: middle; margin-top: 0;}
 label[for^='XCheckBox']{vertical-align: middle;}
-input[id^='XCheckBox']{vertical-align: middle; margin-top: 0;}
+input[id^='XCheckBox']{vertical-align: middle; }
+label[for^='ChildCus']{vertical-align: middle;}
+input[id^='ChildCus']{vertical-align: middle; }
 label[for^='xrdLanguag'],label[for^='xrdUrgen']{vertical-align: middle;}
 input[id^='xrdLanguag'],input[id^='xrdUrgen']{vertical-align: middle; margin-top: 0;}
 input[type="text" i]:disabled,textarea:disabled{
