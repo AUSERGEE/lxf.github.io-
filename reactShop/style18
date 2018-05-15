@@ -1,0 +1,32 @@
+.ui-icon-seek-first,.ui-icon-seek-prev,.ui-icon-seek-next,.ui-icon-seek-end{
+   background: url(https://raw.githubusercontent.com/AUSERGEE/lxf.github.io-/master/reactShop/pageIc.png);
+}
+.ui-icon-seek-first{
+   width: 16px;
+	height: 20px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0px 0px!important;
+}
+.ui-icon-seek-prev{
+    width: 16px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -17px 0px!important;
+}
+
+.ui-icon-seek-next{
+    width: 16px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -36px 0px!important;
+
+}
+ .ui-icon-seek-end{ width: 16px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -53px 0px!important;
+}
