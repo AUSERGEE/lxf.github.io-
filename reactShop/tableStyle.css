@@ -31,7 +31,7 @@ body{border-width: 0!important;}
     line-height: 32px;
     padding: 0 4px 0 2px!important;
     padding-left:28px!important;
-    color: #0a60ab!important;
+    color: #2f8ef5!important;
     font-weight: bold;
     font-size: 14px;
     box-sizing: border-box;
@@ -39,7 +39,7 @@ body{border-width: 0!important;}
  .TitTdNoIndex{background:#F4F8FF;height: 32px;
     line-height: 32px;
     padding: 0 4px 0 2px!important;
-    color: #0a60ab!important;
+    color: #2f8ef5!important;
     font-weight: bold;
     font-size: 14px;
     box-sizing: border-box;
@@ -93,10 +93,10 @@ input[type="text" i]:disabled,textarea:disabled{
 .mytable{border: 1px solid #d1d3df;}
 
 #HEADC {
-    font-weight: bold;
-    font-size: 15px;
-    color: #2f8ef5;
-    background-color: #f4f8ff;
+    font-weight: bold!important;
+    font-size: 15px!important;
+    color: #2f8ef5!important;
+    background-color: #f4f8ff!important;
     height: 30px;
     line-height: 30px;
 }
@@ -126,9 +126,23 @@ div.attach .item{
 	background: #edf7ed;
     border: 1px solid #c2efc2;
 }
+td.SignCell:hover {
+    color: #258cc1!important;
+}
+.BOXCSS {
+    BORDER-BOTTOM: #bed2f5 1px solid!important;
+}
 /*****************************************************/
  class="TitTd" 
  class="labelTd" 
  class="bgBlue"
  <span class="indexLabek"></span>
  
+ <%@ Register TagPrefix="webxfrom" Namespace="XXSoft.WebControls.Web.UI" Assembly="XXSoft.WebControls" %>
+ 
+ <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+ 
+ 
+                     <tr>
+                        <WEBXFROM:XSIGNTRACE id="webXSignTrace1" runat="server" CssClass="AA" Width="1246px"></WEBXFROM:XSIGNTRACE>
+                    </tr>

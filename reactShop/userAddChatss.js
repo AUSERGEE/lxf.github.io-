@@ -30,13 +30,46 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
          'LSHT_Applicant_All.SalesHRID':{userId:'',userInputName:"LSHT_Applicant_All.SalesHRName"},
          'LSHT_Applicant_All.MarketHRID':{userId:'',userInputName:"LSHT_Applicant_All.MarketHRName"},
          'GGHT_Applicant_All.AppHRID':{userId:'',userInputName:"GGHT_Applicant_All.AppHRName"},
-         'RetailSoftPublish.AppID':{userId:'',userInputName:"RetailSoftPublish.AppName"}
+         'RetailSoftPublish.AppID':{userId:'',userInputName:"RetailSoftPublish.AppName"},
+
+         'OFR_SH_Applicant.HRID':{userId:'',userInputName:"OFR_SH_Applicant.Name"},
+         'OFR_GN_Applicant.HRID':{userId:'',userInputName:"OFR_GN_Applicant.Name"},
+         'OFR_GN_Applicant.HRID_TechnologySupport':{userId:'',userInputName:"OFR_GN_Applicant.Name_TechnologySupport"},
+         'OFR_Cancel_Applicant.HRID':{userId:'',userInputName:"OFR_Cancel_Applicant.Name"},
+         'OFR_BS_Applicant.HRID':{userId:'',userInputName:"OFR_BS_Applicant.Name"},
+         'OFR_KD_Applicant.HRID':{userId:'',userInputName:"OFR_KD_Applicant.Name"},
+         'OFR_Wuxian_Applicant.HRID':{userId:'',userInputName:"OFR_Wuxian_Applicant.Name"},
+         'OFR_Wuxian_SC_Applicant.HRID':{userId:'',userInputName:"OFR_Wuxian_SC_Applicant.Name"},
+         'OFR_QCZN_Applicant.HRID':{userId:'',userInputName:"OFR_QCZN_Applicant.Name"},
+         'OFR_KDJR_Applicant.HRID':{userId:'',userInputName:"OFR_KDJR_Applicant.Name"},
+         'OFR_WY_Applicant.HRID':{userId:'',userInputName:"OFR_WY_Applicant.Name"},
+         'OFR_SC_Applicant.HRID':{userId:'',userInputName:"OFR_SC_Applicant.HRID"},
+         'OFR_SC_Applicant.HRID':{userId:'',userInputName:"OFR_SC_Applicant.Name"},
+		 'OFR_LYQ_Applicant.Name':{userId:'',userInputName:"OFR_LYQ_Applicant.Name"},
+		 'OFR_HWLS_Applicant.HRID':{userId:'',userInputName:"OFR_HWLS_Applicant.Name"},
+		 'OFR_LSCP_Applicant.HRID':{userId:'',userInputName:"OFR_LSCP_Applicant.Name"},
+		 'Fin_Applicant.HRID':{userId:'',userInputName:"Fin_Applicant.Applicant"},
+		 'Fin_KouKuan.AppHRID':{userId:'',userInputName:"Fin_KouKuan.AppName"},
+		 'Fin_Applicant.HRID':{userId:'',userInputName:"Fin_Applicant.Applicant"},
+		 'Fin_Applicant.Sub_HRID':{userId:'',userInputName:"Fin_Applicant.Sub_Name"},
+		 'AppID':{userId:'',userInputName:"AppName"},
+		 'AppID':{userId:'',userInputName:"AppName"}
       };
 
-      //目前包括it页面和合同相关页面
+      //it页面和合同相关页面
       // var needChatTidArr=['609775','609636','609281','606471','608081','609805','511463',
       //                      '609654','609178','609824','602244','609833','595796','606328','552809',
-      //                      '609769','275211','608256','608245','597368','274557','317056'
+      //                      '609769','275211','608256','608245','597368','274557','317056',
+      // 订单评审相关页面：                     
+      //                      '621578',‘521198’,‘621063’,'619746','456101','619601','615549',
+      //                      '618694','609548','603746','616393','460335','603438','555116',
+      //                      '403142','403142','592251','621164','609778','607809','607089'
+      //                      ,'615584','615131','615131','603780','622107','614864','619363'
+	  //                      ,'465533','467580','610413','605423','604992','603156','525845'
+	  //                      ,'539518','568190','606674'
+	  //财务相关页面：
+	  //                      ,'626840','623026','606674','626894','595194','511385','622826'
+	  //                      ,'623446','626886','627249','625669'
       //                    ];
       //测试环境的tid
       // var needChatTidArr=['317056','316512','310417','317131','316160','316061'
@@ -58,6 +91,29 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
                 ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
+
+                ||pageUrl.indexOf('Forms/XForm/售后订单评审')!=-1
+                ||pageUrl.indexOf('/XForm/售后订单评审/售后订单更改评审')!=-1
+                ||pageUrl.indexOf('/XForm/国内订单评审/国内订单评审V2.')!=-1
+                ||pageUrl.indexOf('/XForm/国内订单评审/国内运营订单更改评审V1')!=-1 
+                ||pageUrl.indexOf('/国内运营订单取消评审/OrderCancel')!=-1
+                ||pageUrl.indexOf('/国内宽带返工订单评审/国内和宽带返工订单评审')!=-1
+                ||pageUrl.indexOf('/国内宽带返工订单评审/国内和宽带返工订单更改评审')!=-1              
+                ||pageUrl.indexOf('/2012订单评审系列/')!=-1 
+                ||pageUrl.indexOf('/序列号审核/NewFile')!=-1
+                ||pageUrl.indexOf('XForm/接入产品订单评审/接入产品订单评审')!=-1
+                ||pageUrl.indexOf('/海外零售订单评审/海外零售订单评审')!=-1
+                ||pageUrl.indexOf('/零售产品部订单评审/零售产品部订单评审')!=-1
+                ||pageUrl.indexOf('零售电商部订单评审/零售电商部订单更改评审')!=-1      
+				||pageUrl.indexOf('零售电商部订单评审/零售电商部订单评审')!=-1      
+				||pageUrl.indexOf('海外零售订单评审/海外零售订单更改评审')!=-1      
+				||pageUrl.indexOf('零售产品部订单评审/零售产品部订单更改评审')!=-1      
+				||pageUrl.indexOf('国内零售返工订单/零售国内返工订单评审')!=-1      
+				||pageUrl.indexOf('国内零售返工订单/零售国内返工订单更改评审')!=-1      
+				||pageUrl.indexOf('海外返工订单/海外返工订单更改')!=-1      
+				||pageUrl.indexOf('Forms/XForm/Finance/')!=-1
+				||pageUrl.indexOf('aaaaa')!=-1
+				||pageUrl.indexOf('aaaaa')!=-1
               )) { 
                   nameAddChatIcon();
             }
