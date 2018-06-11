@@ -91,6 +91,8 @@ if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
                 ||pageUrl.indexOf('Forms/XForm/汽车智能合同审批/')!=-1
                 ||pageUrl.indexOf('YZSoft/Forms/XForm/海外合同审批/')!=-1
                 ||pageUrl.indexOf('Forms/XForm/零售合同审批/')!=-1
+				
+				|| pageUrl.indexOf('Forms/XForm/Finance/付款申请') != -1
 
                 ||pageUrl.indexOf('Forms/XForm/售后订单评审')!=-1
                 ||pageUrl.indexOf('/XForm/售后订单评审/售后订单更改评审')!=-1
