@@ -1,3 +1,40 @@
+setTimeout(function(){  //获取默认的input值
+          inputInit={
+            XDropDownList8: $("#XDropDownList8").val(),
+            BankNameDetail:$("input[xdatabind='Fin_Payee.BankNameDetail']").val(),
+            Account:$("input[xdatabind='Fin_Payee.Account']").val(),
+            IntercourseNo:$("input[xdatabind='Fin_Payee.IntercourseNo']").val(),
+            XDropDownList10:$("#XDropDownList10").val(),
+            XDropDownList6:$("#XDropDownList6").val(),
+            XDropDownList7:$("#XDropDownList7").val()
+          }
+
+        },2000)
+
+beforeSearch:function(){  //当用户修改input值时，重置其余的input值
+
+			    $("#XDropDownList8").val(inputInit.XDropDownList8);//开户行
+                $("input[xdatabind='Fin_Payee.BankNameDetail']").val(inputInit.BankNameDetail);
+                $("input[xdatabind='Fin_Payee.Account']").val(inputInit.Account);
+                $("input[xdatabind='Fin_Payee.IntercourseNo']").val(inputInit.IntercourseNo);
+
+                $("#XDropDownList10").val(inputInit.XDropDownList10);//是否大陆
+
+                $("#XDropDownList6").val(inputInit.XDropDownList6);//省
+
+
+                $("#XDropDownList7").val(inputInit.XDropDownList7);//市
+
+
+                $("#XRadioButtonList5_0").prop("checked",false);
+
+
+                $("#XRadioButtonList5_1").prop("checked",false);
+
+
+			}
+
+
 
 //*****************input中的用户名添加聊天弹框**start***********************************
 if(typeof userToken!="undefined"&&userToken.Account=="SDT13841"){
