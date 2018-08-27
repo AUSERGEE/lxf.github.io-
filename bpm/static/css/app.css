@@ -1,0 +1,61 @@
+.btnBox{padding:10px 12px}
+body{background: #f6f6f6;}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+
+.weui-tabbar{position:fixed!important;}
+.btnBox>.weui-btn_primary{background-color:#4F93F2;}
+
+a{text-decoration: none;}
+a.weui-grid{
+    text-decoration: none;
+    padding: 18px 10px;
+}
+.weui-grid .weui-grid__icon{
+    width:46px;
+    height:46px;
+}
+.weui-grid__icon + p.weui-grid__label{
+    margin-top:0px;
+}
+
+.gridInterval{
+    height:20px;
+}
+
+.personLsit{
+    overflow: hidden;
+    zoom: 1;
+    padding-top:6px;
+}
+.personItem{
+   width:60px;
+   float:left;
+   text-align:center;
+}
+.personImg{
+   width:46px;
+   height:46px;
+   display:inline-block;
+   text-align: center;
+   line-height:46px;
+   background:#4F93F2;
+   border-radius:50%;
+   color:#FFF;
+}
+.personName{
+    line-height:26px;
+    font-size:14px;
+    color:#666;
+
+}
+
+.fixedBottom_btnBox{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+}
+.pdBt{
+    padding-bottom:80px;
+}

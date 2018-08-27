@@ -76,7 +76,7 @@ body{border-width: 0!important;}
     height: 34px!important;
     color: #2f8ef5!important;
 }
-.labelTd{padding-right: 4px;color: #474a8e!important; font-size: 12px!important;}
+.labelTd{padding-right: 4px;color:#526396!important }
 .td_label{color:#474a8e;}
 
 label[for^='XRadioButtonLi']{vertical-align: middle;}
@@ -85,6 +85,8 @@ label[for^='XCheckBox']{vertical-align: middle;}
 input[id^='XCheckBox']{vertical-align: middle; }
 label[for^='ChildCus']{vertical-align: middle;}
 input[id^='ChildCus']{vertical-align: middle; }
+label[for^='checkRelatedParty']{vertical-align: middle;}
+input[id^='checkRelatedParty']{vertical-align: middle; }
 label[for^='xrdLanguag'],label[for^='xrdUrgen']{vertical-align: middle;}
 input[id^='xrdLanguag'],input[id^='xrdUrgen']{vertical-align: middle; margin-top: 0;}
 input[type="text" i]:disabled,textarea:disabled{
@@ -132,6 +134,10 @@ td.SignCell:hover {
 .BOXCSS {
     BORDER-BOTTOM: #bed2f5 1px solid!important;
 }
+
+INPUT {
+    color: #555;
+}
 /*****************************************************/
  class="TitTd" 
  class="labelTd" 
@@ -146,3 +152,38 @@ td.SignCell:hover {
                      <tr>
                         <WEBXFROM:XSIGNTRACE id="webXSignTrace1" runat="server" CssClass="AA" Width="1246px"></WEBXFROM:XSIGNTRACE>
                     </tr>
+					
+					
+					
+<script>
+
+
+javascript('fsfunction',sum(HR_Perf_Sum.SelfScore*HR_Perf_Sum.Weight+HR_Perf_Manage.SelfScore*HR_Perf_Manage.Weight))
+            function fsfunction(fs){
+                    console.log(fs)
+                 var checkResult='';
+                 switch(true){
+                   case fs<6 :
+                     checkResult="D";
+                     break;
+                   case fs>=6&&fs<8 :
+                     checkResult="C";
+                     break;
+                   case fs>=8&&fs<9 :
+                      checkResult="B";
+                     break;
+                   case fs>=9 :
+                      checkResult="A";
+                     break;
+
+                 }
+                 console.log(checkResult);
+                 changInput(checkResult)
+            }
+            function changInput(text){
+              setTimeout(function(){
+                $('input[xdatabind="HR_Perf_Main.SelfLevel"]').val(text)
+              },0)
+
+            }
+       </script>
