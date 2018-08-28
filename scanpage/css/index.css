@@ -1,0 +1,40 @@
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+html{font-size:73.24%}
+}
+@media screen and (min-width:481px){
+html{font-size:94%}
+}
+@media screen and (min-width:561px){
+html{font-size:109%}
+}
+@media screen and (min-width:641px){
+html{font-size:125%}
+}
+ul{margin: 0;padding: 0;}
+li{ list-style: none;}
+p{margin-bottom: 0px;}
+/**************************************公用样式**start*/
+html,body{
+  height: 100%;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+.btnBox{
+	margin-top:20px;
+	padding:10px 12px;
+}
+
+div.weui-cell {
+    background: #fff;
+}
+label.weui-check__label{background:#FFF;}
+div.page,div.weui-cells{
+	background:#f1f1f1;
+}
+.mr-6{
+	margin-top:16px;
+}
