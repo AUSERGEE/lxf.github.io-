@@ -22,7 +22,7 @@
 				  <input class="weui-input" type="text" id="area">
 				</div>
 			  </div>
-			<div class="weui-cells__title mr-6">单选项</div>
+			<div class="weui-cells__title mr-6">请选择服务类型</div>
 			<div class="weui-cells weui-cells_radio">
 			  <label class="weui-cell weui-check__label" for="x11">
 				<div class="weui-cell__bd">
@@ -80,8 +80,14 @@
 		   }else if(phoneNum==''){
 		      $.alert("请输入联系方式");
 			  return
+		   }else{
+		     $('#message').val('');
+		     $('#phoneNum').val('');
+		     $.alert("提交成功");
 		   }
-		   $.alert("提交成功");
+		   
+		   
+		   
 		})
 	</script>
   </body>
