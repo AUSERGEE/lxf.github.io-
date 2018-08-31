@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>首页</title>
+    <script src="mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/lbm.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="js/Swiper3/css/swiper.min.css"/>
+</head>
+<body>
+404
+
+
+<!--<div class="lbm-goTop">
+	 <span class="goTopTcBox"><i class="lbm-icon-goTop"></i></span>
+</div>-->
+<script type="text/javascript" src="jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="lbm.js" ></script>
+<script type="text/javascript" src="Swiper3/swiper.jquery.min.js"></script>
+<script type="text/javascript">
+
+</script>
+<script type="text/ecmascript">
+    mui.init({
+        swipeBack: true,//启用右滑关闭功能
+        pullRefresh : {
+	        container:"#offCanvasContentScroll",//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+	        up : {
+	            height:50,// 可选.默认50.触发上拉加载拖动距离
+	            auto:false,// 可选,默认false.自动上拉加载一次
+	            contentrefresh : "正在加载...",// 可选，正在加载状态时，上拉加载控件上显示的标题内容
+	            contentnomore:'没有更多数据了',// 可选，请求完毕若没有更多数据时显示的提醒内容；
+	            callback : function() {
+	                var self = this; // 这里的this == mui('#refreshContainer').pullRefresh()
+	                // 加载更多的内容
+	                loadMore(this);
+	            } //必选，刷新函数，根据具体业务来编写，比如通  过ajax从服务器获取新数据；
+	        }
+	    }
+    });
+   
+    mui('#offCanvasContentScroll').scroll();
+	var loadMore = function(pullRefresh) {
+	    // 加载更多的内容到列表中
+	    // TODO
+	    
+	    setTimeout(function(){
+	    	$('.goodsList').append($(creatHtml(goodsObj)));
+	    	
+	    	// 如果没有更多数据了，则关闭上拉加载
+	        pullRefresh.endPullupToRefresh(true);
+	    	//重置上拉加载
+	    	mui('#offCanvasContentScroll').pullRefresh().refresh(true);
+	    	
+	    },2000);
+	    
+	    // 如果有更多数据，则继续
+	    //pullRefresh.endPullupToRefresh(false);
+	};
+	mui('.mui-bar-tab').on('tap','a',function(){document.location.href=this.href;});
+
+
+    var goodsTxt = '[' +
+	                '{"goodsImg":"images/goodsImg.jpg","goodsname":"创维A2限量版111"},' +
+	                '{"goodsImg":"images/goodsImg.jpg","goodsname":"创维A2限量版222222"},' +
+	                '{"goodsImg":"images/goodsImg.jpg","goodsname":"创维A2限量版33333333333"}'+
+                ']';
+   //后台的商品数据
+   var goodsObj = JSON.parse(goodsTxt);
+   
+   //创建html字符串的方法
+   function creatHtml(goodsObj){  
+   	  var goodsItemStr='';
+   	  for(var i=0,len=goodsObj.length;i<len;i++){
+   	  	 goodsItemStr+='<li class="goodsItem">'+
+				           '<div class="lbm_flexbox">'+
+				                '<a href="#">'+
+				                	'<span class="gd-img">'+
+				                		'<img src="'+goodsObj[i]["goodsImg"]+'" />'+
+				                	'</span>'+
+				                	'<div class="info-box lbm_flex1">'+
+				                	     '<strong class="gd-title ellipsis_two">'+goodsObj[i]["goodsname"]+'</strong>'+
+				                	     '<p class="gd-label-row">'+
+				                	        '<span>CONVERSE 匡威</span>'+
+				                	        '<span>TX900</span>'+
+				                	     '</p>'+
+				                	     '<p class="price-row">'+
+				                	        '<b>￥192.00</b>'+
+				                	     '</p>'+
+				                	     '<p class="gd-id-row">'+
+				                	        '<span>商品编码：10460514</span>'+
+				                	     '</p>'+
+				                 	'</div>'+
+				                	'<span class="toCart lbm-icon-toCart"></span>'+
+				                '</a>'+
+				           '</div>'+
+				        '</li>';
+			
+   	  }
+   	  return goodsItemStr;
+   }
+</script>
+<script>
+  //下拉-底部选项卡隐藏
+  $('#offCanvasContentScroll').on('swipeup',function(){
+  	 lbmTool.spriteMove('.lbm-bar-tab',[0,46,0]);
+  });
+  //上拉-底部选项卡显示
+  $('#offCanvasContentScroll').on('swipedown',function(){
+  	 lbmTool.spriteMove('.lbm-bar-tab',[0,0,0]);
+  });
+</script>
+<script> //蜜蜂头条
+		      function timer(opj){
+		            $(opj).animate({
+		                marginTop : "-3rem"  
+		                },500,function(){  
+		                $(this).css({marginTop : "0rem"}).find("li:first").appendTo(this);  
+		            })  
+		        }
+		      $(function(){ 
+		            var num = $('.newsList').find('li').length;
+		            if(num > 1){
+		               var time=setInterval('timer(".newsList")',3500);
+		            }
+             });
+</script>
+		
+		
+		<script> //mui('.mui-scroll-wrapper').scroll().scrollTo(0,0,100);
+//			document.querySelector('#offCanvasContentScroll' ).addEventListener('scrollstart', function (e) {
+//			        if(e.detail.y <= -50){
+//			             $('.lbm-goTop').fadeIn(300).find('i').addClass('active'); 
+//			        }else{    
+//			             $('.lbm-goTop').fadeOut(300).find('i').removeClass('active');     
+//			        }  
+//			});
+//			$('.lbm-goTop').on('tap',function(){
+//				mui('#offCanvasContentScroll').scroll().scrollTo(0,0,100);
+//				$('.lbm-goTop').fadeOut(300);  
+//			});
+
+        var goTopObj=new goTop({
+ 	  	 	bottom:'56',
+ 	  	 	right:'15',
+ 	  	 	scrollWrapDiv:'#offCanvasContentScroll'
+ 	    });
+ 	    //拖动曲边变化
+ 	    var scroll = mui('.mui-scroll-wrapper').scroll(); 
+	    document.querySelector('.mui-scroll-wrapper' ).addEventListener('scroll', function (e ) { 
+	    	if(scroll.y>-2){
+	    		 $('.radiusBox').css({WebkitTransform:'rotateX('+scroll.y*2+'deg)',WebkitTransformOrigin:'center bottom'});
+	    	}
+	        if(scroll.y<50){
+	        	$('.logoBgLayer1').css({'top':-(0.08*(50-scroll.y))});
+	        	$('.logoBgLayer2').css({'top':-(0.16*(50-scroll.y))});
+	        	$('.logoBgLayer3').css({'top':-(0.24*(50-scroll.y))});
+	        }
+	    }) 
+		</script>
+		
+		
+		<script>//搜索区脚本
+  $(function(){  
+  	  var searchBarstaus=false;
+  	  function searchStatus(status){
+  	  	 
+  	  	status?(
+  	  		$('.lbm-searchLayer').addClass('lbm-topLayer'),
+  	  		$('.search-box').append($('<div class="ifc-mask04"></div>')),
+  	  		searchBarstaus=true
+  	  	):(
+  	  		$('.lbm-searchLayer').removeClass('lbm-topLayer'),
+  	  		$('.ifc-mask04').remove(),
+  	  		searchBarstaus=false
+  	  	)
+  	  }
+  	  
+  	  searchStatus(false);
+  	  $('.lbm-searchBox>input').focus(function(){
+  	  	   searchBarstaus?null:searchStatus(true);
+  	  	   $('.lbm-topLayer').height(document.documentElement.clientHeight);
+  	  });
+      $('#lbm-cancle').on('tap',function(){
+      	   searchBarstaus?searchStatus(false):null;
+      	   $('.lbm-searchBox>input').blur();
+      });
+  });
+  
+</script>
+<script>
+  $(document).on('tap',function(e){
+     //console.log(e.originalEvent.detail.center);
+	  var tapPos=e.originalEvent.detail.center;
+	  if(tapPos.x<15&&tapPos.y<15){  
+	    mui.prompt('调试模式：', ['取消', '确定'], function(e) {  
+                    if (e.index == 1) {  
+			    if(e.value=='13841'){
+			      
+				   var head = document.getElementsByTagName('head')[0];
+				   var script = document.createElement('script');
+				   script.type = 'text/javascript';
+				   script.src = 'https://getfirebug.com/firebug-lite-debug.js';
+				   head.appendChild(script);
+				   window.settimeout(function(){
+				       Firebug.context.persistedState.sidePanelWidth =130;
+				       Firebug.chrome.draw();
+				   },2000);
+			   
+                           } else {  }  
+		    }
+           });  
+	 }
+  });
+
+</script>
+</body>
+</html> 
